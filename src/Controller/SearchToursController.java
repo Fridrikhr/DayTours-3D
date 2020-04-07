@@ -4,20 +4,37 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class SearchToursController {
-
     @FXML
-    public TableView<ObservableList<String>> resultTable = new TableView<>();
+    private DatePicker startDateChoice;
+    @FXML
+    private DatePicker endDateChoice;
+    @FXML
+    private ChoiceBox<?> locationChoice;
+    @FXML
+    private ChoiceBox<?> interestChoice;
+    @FXML
+    private TextField maxPriceInput;
+    @FXML
+    private TextField minPriceInput;
+    @FXML
+    private TextField seatsInput;
+    @FXML
+    private TextField tourNameInput;
 
     @FXML
     private Button searchButton;
+    @FXML
+    private Button myBookingsButton;
+
+
+    @FXML
+    public TableView<ObservableList<String>> resultTable = new TableView<>();
 
     public TableColumn<ObservableList<String>, String> column;
 
@@ -39,6 +56,11 @@ public class SearchToursController {
         }
 
         // TODO: sækja trips í JSON og setja í töfluna
+    }
+
+    @FXML
+    void myBookingsButtonHandler(ActionEvent event) {
+        System.out.println("my bookings");
     }
 
     @FXML

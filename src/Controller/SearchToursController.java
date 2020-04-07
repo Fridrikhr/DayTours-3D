@@ -42,7 +42,7 @@ public class SearchToursController {
 
     @FXML
     void searchButtonHandler(ActionEvent event) {
-        System.out.println("Ýtt á góðan takka");
+        System.out.println("Ýtt á góðan2 takka");
     }
 
 }

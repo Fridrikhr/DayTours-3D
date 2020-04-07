@@ -56,6 +56,7 @@ public class SearchToursController {
         }
 
         // TODO: sækja trips í JSON og setja í töfluna
+
     }
 
     @FXML

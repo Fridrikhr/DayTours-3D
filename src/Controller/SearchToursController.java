@@ -69,12 +69,8 @@ public class SearchToursController {
     void myBookingsButtonHandler(ActionEvent event) throws IOException {
         System.out.println("my bookings");
 
-        // bara prufa hvernig maður skiptir um view
-
-        // Það á að skiptast í bookings.fxml view en það á eftir að búa það til
-
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getClassLoader().getResource("./View/tour.fxml"));
+        loader.setLocation(getClass().getClassLoader().getResource("./View/booking.fxml"));
         Parent parent = loader.load();
         Scene scene = new Scene(parent);
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();

@@ -15,7 +15,8 @@ public class  Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("../View/searchTours.fxml"));
         primaryStage.setTitle("Day tours");
-        primaryStage.setScene(new Scene(root, 1068, 600));
+        primaryStage.setScene(new Scene(root, 1068, 511));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

@@ -1,6 +1,30 @@
 [
   {
     "id": 1,
-    "Name": "Golden Circle"
+    "Tour Name": "Hoffellsjokull Glacier",
+    "Category": "Nature",
+    "Description": "This is a tour to and from Hoffellsjokull which is a nice attraction if you stay in Hofn, east region. There is also a small lake which makes the view simply gorgeous.",
+    "Duration": "6 hours",
+    "Small Description": "Tour to and from Hoffellsjokull",
+    "Seats": 30,
+    "Seats Left": 30,
+    "Tour Guide": "Kristinn Godfrey",
+    "Date": "4/7/2020",
+    "Location": "East region",
+    "Price": 9999
+  },
+  {
+    "id": 2,
+    "Tour Name": "Tour of Skriðuklaustur",
+    "Category": "Museum",
+    "Description": "Centre of culture and history with monastic ruins, historical exhibitions, art gallery, gift shop and a local food restaurant.",
+    "Duration": "3 hours",
+    "Small Description": "Museum of culture and history",
+    "Seats": 10,
+    "Seats Left": 10,
+    "Tour Guide": "Almar Teitsson",
+    "Date": "4/15/2020",
+    "Location": "East Region",
+    "Price": 2500
   }
 ]

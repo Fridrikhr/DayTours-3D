@@ -21,5 +21,4 @@ public class TourController {
     void backButtonHandler(ActionEvent event) {
 
     }
-
 }

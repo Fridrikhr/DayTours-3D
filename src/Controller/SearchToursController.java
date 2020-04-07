@@ -4,8 +4,14 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -60,8 +66,20 @@ public class SearchToursController {
     }
 
     @FXML
-    void myBookingsButtonHandler(ActionEvent event) {
+    void myBookingsButtonHandler(ActionEvent event) throws IOException {
         System.out.println("my bookings");
+
+        // bara prufa hvernig maður skiptir um view
+
+        // Það á að skiptast í bookings.fxml view en það á eftir að búa það til
+
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getClassLoader().getResource("./View/tour.fxml"));
+        Parent parent = loader.load();
+        Scene scene = new Scene(parent);
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
     }
 
     @FXML

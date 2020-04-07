@@ -13,6 +13,8 @@ import java.util.List;
 
 public class SearchToursController {
 
+
+
     @FXML
     public TableView<ObservableList<String>> resultTable = new TableView<>();
 
@@ -39,6 +41,7 @@ public class SearchToursController {
         }
 
         // TODO: sækja trips í JSON og setja í töfluna
+
     }
 
     @FXML

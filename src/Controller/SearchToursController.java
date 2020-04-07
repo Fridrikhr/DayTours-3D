@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SearchToursController {
+     
     @FXML
     public TableView<ObservableList<String>> resultTable = new TableView<>();
 

@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SearchToursController {
-     
+
     @FXML
     public TableView<ObservableList<String>> resultTable = new TableView<>();
 
@@ -43,7 +43,7 @@ public class SearchToursController {
 
     @FXML
     void searchButtonHandler(ActionEvent event) {
-        System.out.println("Ýtt á takka");
+        System.out.println("Ýtt á takka, Kiddi was here");
     }
 
 }

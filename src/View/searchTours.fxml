@@ -83,7 +83,7 @@
         </AnchorPane>
       <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="657.0">
         <children>
-                  <TableView fx:id="resultTable" layoutY="37.0" prefHeight="441.0" prefWidth="666.0" />
+                  <TableView fx:id="resultTable" layoutY="37.0" onMouseClicked="#onClickTable" prefHeight="441.0" prefWidth="666.0" />
                   <Text layoutX="6.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tours that matched your search:" />
         </children>
       </AnchorPane>

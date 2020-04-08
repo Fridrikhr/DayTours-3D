@@ -24,7 +24,11 @@ public class TourController {
     @FXML
     private Text name;
     @FXML
-    private Text rating;
+    private Text price;
+    @FXML
+    private Text seats;
+    @FXML
+    private Text location;
     @FXML
     private Text length;
     @FXML
@@ -43,12 +47,14 @@ public class TourController {
     }
 
     public void initData (Tour tour){
-        name.setText(tour.getText());
-        guide.setText(tour.getGuideId());
+        name.setText(tour.getName());
+        guide.setText(tour.getTourGuide());
         info.setText(tour.getDescription());
-        rating.setText(Integer.toString(tour.getAvgRating()));
         date.setText(tour.getDate());
-        length.setText(Integer.toString(tour.getLength()));
+        length.setText(Integer.toString(tour.getDuration()));
+        seats.setText(Integer.toString(tour.getSeatsLeft()) + "available seats out of" + Integer.toString(tour.getSeats()));
+        location.setText(tour.getLocation());
+        price.setText(Integer.toString(tour.getPrice()));
     }
 
     @FXML

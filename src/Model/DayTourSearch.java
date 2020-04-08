@@ -26,6 +26,7 @@ public class DayTourSearch {
                 String name = (String) jsonObject.get("name");
                 String category = (String) jsonObject.get("category");
                 String description = (String) jsonObject.get("description");
+
                 int duration = (int)((long)jsonObject.get("duration"));
                 String smallDescription = (String) jsonObject.get("smallDescription");
                 int seats = (int)((long)jsonObject.get("seats"));

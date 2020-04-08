@@ -50,6 +50,9 @@ public class SearchToursController {
 
     private DayTourSearch dayTourSearch;
 
+    private Tour testTour = new Tour(1, "Nafn á tour", "nature", "description", 6, "small description", 10, 8, "Bjöggi", "12/4/2020", "Reykjavík", 10000);
+
+
     @FXML
     public void initialize() {
         // Setur efstu röðina í töfluna
@@ -75,13 +78,11 @@ public class SearchToursController {
     }
 
     private void getTrips() {
-        Tour testTour = new Tour(1, "test name", "nature", "description", 6, "small description", 10, 10, "Bjöggi", "12/4/2020", "Reykjavík", 10000);
-
         ObservableList<String> row = FXCollections.observableArrayList();
 
         row.add(testTour.getName());
-        row.add(Integer.toString(testTour.getSeatsLeft()));
-        row.add(Integer.toString(testTour.getDuration()));
+        row.add(testTour.getSeatsLeft() + "/" + testTour.getSeats());
+        row.add(testTour.getDuration() + " hours");
         row.add(testTour.getDate());
         row.add(Integer.toString(testTour.getPrice()));
         row.add(testTour.getDate());
@@ -93,10 +94,6 @@ public class SearchToursController {
     @FXML
     public void onClickTable(MouseEvent mouseEvent) throws IOException {
         if(mouseEvent.getClickCount() == 2){
-            // finnur id á tour sem klikkað er á
-            String id = resultTable.getSelectionModel().getSelectedItem().get(6);
-            System.out.println("id á tour: " + id);
-
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getClassLoader().getResource("./View/tour.fxml"));
             Parent parent = loader.load();
@@ -104,6 +101,14 @@ public class SearchToursController {
             Stage window = (Stage) ((Node)mouseEvent.getSource()).getScene().getWindow();
             window.setScene(scene);
             window.show();
+
+            // finnur id á tour sem klikkað er á
+            String id = resultTable.getSelectionModel().getSelectedItem().get(6);
+            System.out.println("id á tour: " + id);
+            // Tour selected = selectTourById(id); vantar svona aðferð
+            Tour selected = testTour;
+            TourController tourController = loader.getController();
+            tourController.initData(selected);
         }
     }
 

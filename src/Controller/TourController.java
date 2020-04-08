@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.Tour;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,7 +24,11 @@ public class TourController {
     @FXML
     private Text name;
     @FXML
-    private Text rating;
+    private Text price;
+    @FXML
+    private Text seats;
+    @FXML
+    private Text location;
     @FXML
     private Text length;
     @FXML
@@ -32,7 +37,24 @@ public class TourController {
     private Text info;
 
     @FXML
+    public void initialize() {
+
+    }
+
+    @FXML
     void bookButtonHandler(ActionEvent event) {
+        System.out.println("Túr bókaður");
+    }
+
+    public void initData (Tour tour){
+        name.setText(tour.getName());
+        guide.setText(tour.getTourGuide());
+        info.setText(tour.getDescription());
+        date.setText(tour.getDate());
+        length.setText(Integer.toString(tour.getDuration()));
+        seats.setText(tour.getSeatsLeft() + "available seats out of" + tour.getSeats());
+        location.setText(tour.getLocation());
+        price.setText(Integer.toString(tour.getPrice()));
 
     }
 

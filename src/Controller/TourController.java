@@ -28,14 +28,13 @@ public class TourController {
     @FXML
     private Text seats;
     @FXML
-    private Text location;
+    private Text rating;
     @FXML
     private Text length;
     @FXML
     private Text guide;
     @FXML
     private Text info;
-
     @FXML
     public void initialize() {
 
@@ -46,16 +45,14 @@ public class TourController {
         System.out.println("Túr bókaður");
     }
 
-    public void initData (Tour tour){
+    public void initData(Tour tour){
         name.setText(tour.getName());
         guide.setText(tour.getTourGuide());
         info.setText(tour.getDescription());
         date.setText(tour.getDate());
-        length.setText(Integer.toString(tour.getDuration()));
+        length.setText(tour.getDuration() + " hours");
         seats.setText(tour.getSeatsLeft() + "available seats out of" + tour.getSeats());
-        location.setText(tour.getLocation());
         price.setText(Integer.toString(tour.getPrice()));
-
     }
 
     @FXML

@@ -12,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -51,8 +52,8 @@ public class SearchToursController {
 
     @FXML
     public void initialize() {
-        // Setur efstu dálkana í töfluna
-        List<String> columnNames = Arrays.asList("Name","Available Seats","Duration","Date","Price");
+        // Setur efstu röðina í töfluna
+        List<String> columnNames = Arrays.asList("Name","Available Seats","Duration","Date","Price", "id");
         for(int i = 0; i < columnNames.size(); i++) {
             final int finalIdx = i;
             column = new TableColumn<>(columnNames.get(i));
@@ -60,6 +61,9 @@ public class SearchToursController {
             if (i == 0) {
                 // Name
                 column.setMinWidth(220);
+            } else if(i == 6){
+                // id
+                column.setMaxWidth(0);
             } else {
                 column.setMinWidth(150);
             }
@@ -81,8 +85,26 @@ public class SearchToursController {
         row.add(testTour.getDate());
         row.add(Integer.toString(testTour.getPrice()));
         row.add(testTour.getDate());
+        row.add(Integer.toString(testTour.getId()));
 
         resultTable.getItems().add(row);
+    }
+
+    @FXML
+    public void onClickTable(MouseEvent mouseEvent) throws IOException {
+        if(mouseEvent.getClickCount() == 2){
+            // finnur id á tour sem klikkað er á
+            String id = resultTable.getSelectionModel().getSelectedItem().get(6);
+            System.out.println("id á tour: " + id);
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getClassLoader().getResource("./View/tour.fxml"));
+            Parent parent = loader.load();
+            Scene scene = new Scene(parent);
+            Stage window = (Stage) ((Node)mouseEvent.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+        }
     }
 
     @FXML

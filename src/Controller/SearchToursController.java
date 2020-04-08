@@ -1,6 +1,9 @@
 package Controller;
 
+import Model.DayTourSearch;
+import Model.Tour;
 import javafx.beans.property.ReadOnlyObjectWrapper;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -44,6 +47,8 @@ public class SearchToursController {
 
     public TableColumn<ObservableList<String>, String> column;
 
+    private DayTourSearch dayTourSearch;
+
     @FXML
     public void initialize() {
         // Setur efstu dálkana í töfluna
@@ -61,8 +66,23 @@ public class SearchToursController {
             resultTable.getColumns().add(column);
         }
 
-        // TODO: sækja trips í JSON og setja í töfluna
+        getTrips();
 
+    }
+
+    private void getTrips() {
+        Tour testTour = new Tour(1, "test name", "nature", "description", 6, "small description", 10, 10, "Bjöggi", "12/4/2020", "Reykjavík", 10000);
+
+        ObservableList<String> row = FXCollections.observableArrayList();
+
+        row.add(testTour.getName());
+        row.add(Integer.toString(testTour.getSeatsLeft()));
+        row.add(Integer.toString(testTour.getDuration()));
+        row.add(testTour.getDate());
+        row.add(Integer.toString(testTour.getPrice()));
+        row.add(testTour.getDate());
+
+        resultTable.getItems().add(row);
     }
 
     @FXML

@@ -3,17 +3,17 @@ package Model;
 public class Tour {
     private int id;
     private String text;
-    private int guideId;
+    private String guide;
     private String description;
     private int length;
     private int avgRating;
     private String date;
 
-    public Tour(int id, String text, int guideId, String description, int length, int avgRating, String date)
+    public Tour(int id, String text, String guide, String description, int length, int avgRating, String date)
     {
         this.id = id;
         this.text = text;
-        this.guideId = guideId;
+        this.guide = guide;
         this.description = description;
         this.length = length;
         this.avgRating = avgRating;
@@ -24,8 +24,8 @@ public class Tour {
         return this.text;
     }
 
-    public int getGuideId() {
-        return this.guideId;
+    public String getGuideId() {
+        return this.guide;
     }
 
     public String getDescription() {

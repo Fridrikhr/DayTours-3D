@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.Tour;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,8 +33,22 @@ public class TourController {
     private Text info;
 
     @FXML
-    void bookButtonHandler(ActionEvent event) {
+    public void initialize() {
 
+    }
+
+    @FXML
+    void bookButtonHandler(ActionEvent event) {
+        System.out.println("Túr bókaður");
+    }
+
+    public void initData (Tour tour){
+        name.setText(tour.getText());
+        guide.setText(tour.getGuideId());
+        info.setText(tour.getDescription());
+        rating.setText(Integer.toString(tour.getAvgRating()));
+        date.setText(tour.getDate());
+        length.setText(Integer.toString(tour.getLength()));
     }
 
     @FXML

@@ -20,6 +20,7 @@ public class Tour {
         this.date = date;
     }
 
+
     public String getText() {
         return this.text;
     }

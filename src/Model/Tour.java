@@ -46,6 +46,8 @@ public class Tour {
         return this.description;
     }
 
+
+
     public int getDuration() {
         return this.duration;
     }

@@ -31,11 +31,11 @@ public class DayTourSearch {
                 int seats = (int)((long)jsonObject.get("seats"));
                 int seatsLeft = (int)((long)jsonObject.get("seatsLeft"));
                 String tourGuide = (String) jsonObject.get("tourGuide");
-                int date = (int)((long)jsonObject.get("date"));
+                String date = (String) jsonObject.get("date");
                 String location = (String) jsonObject.get("location");
                 int price = (int)((long)jsonObject.get("price"));
 
-                tour.add(new Tour(id, name, category, description, duration, smallDescription, date, seats, seatsLeft, tourGuide, date, location, price));
+                tour.add(new Tour(id, name, category, description, duration, smallDescription, seats, seatsLeft, tourGuide, date, location, price));
             }
         } catch (Exception e) {
             e.printStackTrace();

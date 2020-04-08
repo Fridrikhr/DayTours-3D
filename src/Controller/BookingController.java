@@ -7,8 +7,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import java.io.IOException;
 
@@ -24,6 +27,8 @@ public class BookingController {
     private Text name;
     @FXML
     private Text name1;
+    @FXML
+    private TextField bookingNr;
 
     @FXML
     void backButtonHandler(ActionEvent event) throws IOException {
@@ -37,8 +42,11 @@ public class BookingController {
     }
 
     @FXML
-    void bookButtonHandler(ActionEvent event) {
-
+    void searchbookingnrButtonHandler(ActionEvent event) {
+        String regex = "\\d+";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(bookingNr.getText());
+        System.out.println(m);
     }
 
 }

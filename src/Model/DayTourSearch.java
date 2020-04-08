@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class DayTourSearch {
     public ArrayList<Tour> tour = new ArrayList<Tour>();
-    private ArrayList<Tour> filtered = tour;
+    private ArrayList<Tour> myFilter = tour;
 
     public DayTourSearch() {
 
@@ -22,24 +22,37 @@ public class DayTourSearch {
             for (int i = 0; i < toursArray.size(); i++) {
                 JSONObject jsonObject = (JSONObject) toursArray.get(i);
 
-                int id = (int)((long)jsonObject.get("id"));
+                int id = (int) ((long) jsonObject.get("id"));
                 String name = (String) jsonObject.get("name");
                 String category = (String) jsonObject.get("category");
                 String description = (String) jsonObject.get("description");
-
-                int duration = (int)((long)jsonObject.get("duration"));
+                int duration = (int) ((long) jsonObject.get("duration"));
                 String smallDescription = (String) jsonObject.get("smallDescription");
-                int seats = (int)((long)jsonObject.get("seats"));
-                int seatsLeft = (int)((long)jsonObject.get("seatsLeft"));
+                int seats = (int) ((long) jsonObject.get("seats"));
+                int seatsLeft = (int) ((long) jsonObject.get("seatsLeft"));
                 String tourGuide = (String) jsonObject.get("tourGuide");
                 String date = (String) jsonObject.get("date");
                 String location = (String) jsonObject.get("location");
-                int price = (int)((long)jsonObject.get("price"));
+                int price = (int) ((long) jsonObject.get("price"));
 
                 tour.add(new Tour(id, name, category, description, duration, smallDescription, seats, seatsLeft, tourGuide, date, location, price));
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void searchName(String s) {
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            String name = myFilter.get(i).getName();
+            String description = myFilter.get(i).getDescription();
+            if (name.toLowerCase().contains(s.toLowerCase()) || description.toLowerCase().contains(s.toLowerCase())) {
+                filtered.add(myFilter.get(i));
+            }
+        }
+
+        myFilter = filtered;
     }
 }

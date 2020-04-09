@@ -21,4 +21,36 @@ public class Booking {
         this.seats = seats;
         this.email = email;
     }
+
+    public int getTourId() {
+        return this.tourId;
+    }
+
+    public String getDate() {
+        return this.date;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public String getPhonenumber() {
+        return this.phonenumber;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public int getSeats() {
+        return this.seats;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
 }

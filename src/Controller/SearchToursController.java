@@ -16,6 +16,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -50,11 +51,15 @@ public class SearchToursController {
 
     private DayTourSearch dayTourSearch;
 
+    private ArrayList<Tour> filteredTours;
+
     private Tour testTour = new Tour(1, "Nafn á tour", "nature", "description", 6, "small description", 10, 8, "Bjöggi", "12/4/2020", "Reykjavík", 10000);
 
 
     @FXML
     public void initialize() {
+        dayTourSearch = new DayTourSearch();
+
         // Setur efstu röðina í töfluna
         List<String> columnNames = Arrays.asList("Name","Available Seats","Duration","Date","Price", "id");
         for(int i = 0; i < columnNames.size(); i++) {
@@ -78,17 +83,21 @@ public class SearchToursController {
     }
 
     private void getTrips() {
-        ObservableList<String> row = FXCollections.observableArrayList();
+        filteredTours = dayTourSearch.getAllTours();
 
-        row.add(testTour.getName());
-        row.add(testTour.getSeatsLeft() + "/" + testTour.getSeats());
-        row.add(testTour.getDuration() + " hours");
-        row.add(testTour.getDate());
-        row.add(Integer.toString(testTour.getPrice()));
-        row.add(testTour.getDate());
-        row.add(Integer.toString(testTour.getId()));
+        for(Tour tour : filteredTours) {
+            ObservableList<String> row = FXCollections.observableArrayList();
 
-        resultTable.getItems().add(row);
+            row.add(tour.getName());
+            row.add(tour.getSeatsLeft() + "/" + tour.getSeats());
+            row.add(tour.getDuration() + " hours");
+            row.add(tour.getDate());
+            row.add(Integer.toString(tour.getPrice()));
+            row.add(tour.getDate());
+            row.add(Integer.toString(tour.getId()));
+
+            resultTable.getItems().add(row);
+        }
     }
 
     @FXML
@@ -105,8 +114,7 @@ public class SearchToursController {
             // finnur id á tour sem klikkað er á
             String id = resultTable.getSelectionModel().getSelectedItem().get(6);
             System.out.println("id á tour: " + id);
-            // Tour selected = selectTourById(id); vantar svona aðferð
-            Tour selected = testTour;
+            Tour selected = dayTourSearch.getTourById(id);
             TourController tourController = loader.getController();
             tourController.initData(selected);
         }
@@ -128,7 +136,7 @@ public class SearchToursController {
     @FXML
     void searchButtonHandler(ActionEvent event) {
         System.out.println("Ýtt á takka, Kiddi,Frikki,almar were here");
-
+        getTrips();
     }
 
 }

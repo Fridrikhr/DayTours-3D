@@ -55,7 +55,6 @@ public class TourController {
         seats.setText(tour.getSeatsLeft() + "available seats out of" + tour.getSeats());
         location.setText(tour.getLocation());
         price.setText(Integer.toString(tour.getPrice()));
-
     }
 
     @FXML

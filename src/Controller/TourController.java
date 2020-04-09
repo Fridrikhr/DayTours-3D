@@ -51,7 +51,7 @@ public class TourController {
         info.setText(tour.getDescription());
         date.setText(tour.getDate());
         length.setText(tour.getDuration() + " hours");
-        seats.setText(tour.getSeatsLeft() + "available seats out of" + tour.getSeats());
+        seats.setText(tour.getSeatsLeft() + " available seats out of " + tour.getSeats());
         price.setText(Integer.toString(tour.getPrice()));
     }
 

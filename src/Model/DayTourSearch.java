@@ -10,16 +10,17 @@ import java.util.ArrayList;
 
 public class DayTourSearch {
     public ArrayList<Tour> allTours = new ArrayList<Tour>();
+    public ArrayList<Booking> allBookings = new ArrayList<Booking>();
 
-    private ArrayList<Tour> myFilter = allTours;
+    private ArrayList<Tour> myFilter = allTours; // The tours we are going to display, matching the search
 
     public DayTourSearch() {
 
         JSONParser parser = new JSONParser();
         try {
-            Object tours = parser.parse(new FileReader("src/Storage/tours.json"));
-            JSONArray toursArray = (JSONArray) tours;
-
+            /*  Read and parse tours.json into allTours */
+            Object toursJSON = parser.parse(new FileReader("src/Storage/tours.json"));
+            JSONArray toursArray = (JSONArray) toursJSON;
             for (int i = 0; i < toursArray.size(); i++) {
                 JSONObject jsonObject = (JSONObject) toursArray.get(i);
 
@@ -37,6 +38,33 @@ public class DayTourSearch {
                 int price = (int) ((long) jsonObject.get("Price"));
                 allTours.add(new Tour(id, name, category, description, duration, smallDescription, seats, seatsLeft, tourGuide, date, location, price));
             }
+
+            /*  Read and parse booking.json into allTours */
+            /* not ready
+            Object bookingJSON = parser.parse(new FileReader("src/Storage/Bookings.json"));
+            JSONArray bookingArray = (JSONArray) bookingJSON;
+            for (int i = 0; i < bookingArray.size(); i++) {
+                JSONObject jsonObject = (JSONObject) bookingArray.get(i);
+
+                int id = (int) ((long) jsonObject.get("id"));
+                String name = (String) jsonObject.get("Tour Name");
+                String category = (String) jsonObject.get("Category");
+                String description = (String) jsonObject.get("Description");
+                int duration = (int) ((long) jsonObject.get("Duration"));
+                String smallDescription = (String) jsonObject.get("Small Description");
+                int seats = (int) ((long) jsonObject.get("Seats"));
+                int seatsLeft = (int) ((long) jsonObject.get("Seats Left"));
+                String tourGuide = (String) jsonObject.get("Tour Guide");
+                String date = (String) jsonObject.get("Date");
+                String location = (String) jsonObject.get("Location");
+                int price = (int) ((long) jsonObject.get("Price"));
+                allBookings.add(new Booking());
+
+            }
+
+             */
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

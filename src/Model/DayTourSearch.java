@@ -95,4 +95,12 @@ public class DayTourSearch {
 
         myFilter = filtered;
     }
+
+    public ArrayList<Tour> getTrips(){
+        return myFilter;
+    }
+
+    public void resetFilter() {
+        myFilter = allTours;
+    }
 }

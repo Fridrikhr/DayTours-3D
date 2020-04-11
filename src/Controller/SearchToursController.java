@@ -52,6 +52,7 @@ public class SearchToursController {
     private DayTourSearch dayTourSearch;
 
     private ArrayList<Tour> filteredTours;
+    private ArrayList<Tour> filteredTours2;
 
     private Tour testTour = new Tour(1, "Nafn á tour", "nature", "description", 6, "small description", 10, 8, "Bjöggi", "12/4/2020", "Reykjavík", 10000);
 
@@ -77,7 +78,6 @@ public class SearchToursController {
             }
             resultTable.getColumns().add(column);
         }
-
         getTrips();
 
     }
@@ -136,10 +136,38 @@ public class SearchToursController {
 
     @FXML
     void searchButtonHandler(ActionEvent event) {
-        System.out.println("Ýtt á takka, Kiddi,Frikki,almar were here");
+        dayTourSearch.resetFilter();
+
+        if(tourNameInput.getText() != null) {
+            dayTourSearch.searchName(tourNameInput.getText());
+        }
+        filteredTours = dayTourSearch.getTrips();
+        displayTrips(filteredTours);
 
         // vantar svona aðferð í DayTourSearch klasann til að uppfæra listann
         // filteredTours = dayTourSearch.getFilteredTours();
+    }
+    public void resetTable() {
+        resultTable.getItems().clear();
+    }
+
+    public void displayTrips(ArrayList<Tour> filteredTours) {
+        //TODO resetta töfluna fyrst
+        resetTable();
+        for(Tour tour : filteredTours) {
+            ObservableList<String> row = FXCollections.observableArrayList();
+
+            row.add(tour.getName());
+            row.add(tour.getSeatsLeft() + "/" + tour.getSeats());
+            row.add(tour.getDuration() + " hours");
+            row.add(tour.getDate());
+            row.add(Integer.toString(tour.getPrice()));
+            row.add(tour.getDate());
+            row.add(Integer.toString(tour.getId()));
+
+            resultTable.getItems().add(row);
+        }
+
     }
 
 }

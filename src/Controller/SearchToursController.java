@@ -68,12 +68,12 @@ public class SearchToursController {
             column.setCellValueFactory(param -> new ReadOnlyObjectWrapper<>(param.getValue().get(finalIdx)));
             if (i == 0) {
                 // Name
-                column.setMinWidth(220);
-            } else if(i == 6){
+                column.setMinWidth(245);
+            } else if(i == 5){
                 // id
-                column.setMaxWidth(0);
+                column.setVisible(false);
             } else {
-                column.setMinWidth(150);
+                column.setMinWidth(100);
             }
             resultTable.getColumns().add(column);
         }
@@ -83,6 +83,7 @@ public class SearchToursController {
     }
 
     private void getTrips() {
+        // sækjum tours sem á að birta í töflu
         filteredTours = dayTourSearch.getAllTours();
 
         for(Tour tour : filteredTours) {
@@ -102,7 +103,7 @@ public class SearchToursController {
 
     @FXML
     public void onClickTable(MouseEvent mouseEvent) throws IOException {
-        if(mouseEvent.getClickCount() == 2){
+        if(mouseEvent.getClickCount() == 2 && resultTable.getSelectionModel().getSelectedItem() != null){
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getClassLoader().getResource("./View/tour.fxml"));
             Parent parent = loader.load();
@@ -136,7 +137,9 @@ public class SearchToursController {
     @FXML
     void searchButtonHandler(ActionEvent event) {
         System.out.println("Ýtt á takka, Kiddi,Frikki,almar were here");
-        getTrips();
+
+        // vantar svona aðferð í DayTourSearch klasann til að uppfæra listann
+        // filteredTours = dayTourSearch.getFilteredTours();
     }
 
 }

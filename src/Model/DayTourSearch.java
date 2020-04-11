@@ -43,6 +43,7 @@ public class DayTourSearch {
     }
 
     public ArrayList<Tour> getAllTours() {
+        allTours.remove(1);
         return allTours;
     }
 

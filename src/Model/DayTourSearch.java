@@ -96,13 +96,12 @@ public class DayTourSearch {
         myFilter = filtered;
     }
 
-    public void searchSeats(String x) {
+    public void searchSeats(int x) {
         ArrayList<Tour> filtered  = new ArrayList<Tour>();
 
-        int s = Integer.valueOf(x);
         for (int i = 0; i < myFilter.size(); i++) {
             int availableSeats = myFilter.get(i).getSeatsLeft();
-            if (availableSeats >= s) filtered.add(myFilter.get(i));
+            if (availableSeats >= x) filtered.add(myFilter.get(i));
         }
         myFilter = filtered;
     }
@@ -114,6 +113,8 @@ public class DayTourSearch {
             int higher = myFilter.get(i).getPrice();
             if (s <= higher) filtered.add(myFilter.get(i));
         }
+
+        myFilter = filtered;
     }
 
     public void searchMaxPrice(int s) {
@@ -123,6 +124,8 @@ public class DayTourSearch {
             int lower = myFilter.get(i).getPrice();
             if (s >= lower) filtered.add(myFilter.get(i));
         }
+
+        myFilter = filtered;
     }
 
     public void searchPriceSpace (int min, int max) {
@@ -132,6 +135,8 @@ public class DayTourSearch {
             int x = myFilter.get(i).getPrice();
             if ((min <= x) && (x <= max)) filtered.add(myFilter.get(i));
         }
+
+        myFilter = filtered;
     }
 
     public ArrayList<Tour> getTrips(){

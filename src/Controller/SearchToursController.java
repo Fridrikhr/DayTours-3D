@@ -52,7 +52,6 @@ public class SearchToursController {
     private DayTourSearch dayTourSearch;
 
     private ArrayList<Tour> filteredTours;
-    private ArrayList<Tour> filteredTours2;
 
     private Tour testTour = new Tour(1, "Nafn á tour", "nature", "description", 6, "small description", 10, 8, "Bjöggi", "12/4/2020", "Reykjavík", 10000);
 
@@ -141,11 +140,8 @@ public class SearchToursController {
         if(tourNameInput.getText() != null) {
             dayTourSearch.searchName(tourNameInput.getText());
         }
-        filteredTours = dayTourSearch.getTrips();
-        displayTrips(filteredTours);
-
-        // vantar svona aðferð í DayTourSearch klasann til að uppfæra listann
-        // filteredTours = dayTourSearch.getFilteredTours();
+        //kannski setja filteredTrips = dayTourSearch.getTrips()
+        displayTrips(dayTourSearch.getTrips());
     }
     public void resetTable() {
         resultTable.getItems().clear();
@@ -167,7 +163,5 @@ public class SearchToursController {
 
             resultTable.getItems().add(row);
         }
-
     }
-
 }

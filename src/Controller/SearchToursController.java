@@ -137,10 +137,10 @@ public class SearchToursController {
     void searchButtonHandler(ActionEvent event) {
         dayTourSearch.resetFilter();
 
-        if(tourNameInput.getText() != null) {
+        if(!tourNameInput.getText().equals("")) {
             dayTourSearch.searchName(tourNameInput.getText());
         }
-        if(seatsInput.getText() != null) {
+        if(!seatsInput.getText().equals("")) {
             dayTourSearch.searchSeats(Integer.valueOf(seatsInput.getText()));
         }
         //kannski setja filteredTrips = dayTourSearch.getTrips()

@@ -5,19 +5,19 @@ public class Booking {
     private String date;
     private String firstName;
     private String lastName;
-    private String phonenumber;
-    private int id;
+    private String phone;
+    private int bookingId;
     private int seats;
     private String email;
 
 
-    public Booking(int tourId, String date, String firstName, String lastName, String phonenumber, int id, int seats, String email) {
+    public Booking(int bookingId, int tourId, String date, String firstName, String lastName, String phone, int seats, String email) {
         this.tourId = tourId;
         this.date = date;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.phonenumber = phonenumber;
-        this.id = id;
+        this.phone = phone;
+        this.bookingId = bookingId;
         this.seats = seats;
         this.email = email;
     }
@@ -38,12 +38,12 @@ public class Booking {
         return this.lastName;
     }
 
-    public String getPhonenumber() {
-        return this.phonenumber;
+    public String getPhone() {
+        return this.phone;
     }
 
-    public int getId() {
-        return this.id;
+    public int getBookingId() {
+        return this.bookingId;
     }
 
     public int getSeats() {

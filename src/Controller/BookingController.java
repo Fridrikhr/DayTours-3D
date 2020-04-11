@@ -1,6 +1,8 @@
 package Controller;
 
 import Model.Booking;
+import Model.DayTourSearch;
+import Model.Tour;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -27,9 +29,16 @@ public class BookingController {
     @FXML
     private Text name;
     @FXML
-    private Text name1;
+    private Text seatsBooked;
     @FXML
     private TextField bookingNr;
+
+    private DayTourSearch dayTourSearch;
+
+    @FXML
+    public void initialize() {
+        dayTourSearch = new DayTourSearch();
+    }
 
     @FXML
     void backButtonHandler(ActionEvent event) throws IOException {
@@ -41,34 +50,22 @@ public class BookingController {
         window.setScene(scene);
         window.show();
     }
-/*
+
     @FXML
     void searchbookingnrButtonHandler(ActionEvent event) {
-        Pattern p = Pattern.compile("[a-z]", Pattern.CASE_INSENSITIVE);
-        Matcher m = p.matcher(bookingNr.getText());
-        if(!m.find()){
-            Booking book = Tour.getBookingById(Integer.parseInt(bookingNr.getText()));
-            System.out.println(book == null);
-            if(book == null){
-                bookingNr.clear();
-                bookingNr.setPromptText("No booking exists with that booking number");
-            } else {
-                trip = dayTours.getTripById(Integer.toString(book.getID()));
-                locationBooked.setText(trip.getLocation());
-                tripBooked.setText(trip.getName());
-                seatsBooked.setText(Integer.toString(book.getSeats()));
-                dateBooked.setText(book.getDate());
-                buyerBooked.setText(book.getFullName());
-                totalPrice.setText(trip.getPrice() * book.getSeats() + "kr.");
-                aboutButton.setDisable(false);
+        Booking booking = dayTourSearch.searchBookingNumber(bookingNr.getText());
+        if(booking == null) {
+            bookingNr.setText("");
+            bookingNr.setPromptText("Booking number not found");
+        } else {
+            // ná í upplýsingar um tourinn
+            String tourId = String.valueOf(booking.getTourId());
+            Tour tour = dayTourSearch.getTourById(tourId);
 
-            }
-        } else if (bookingNr.getText().length() != 0) {
-            bookingNr.clear();
-            bookingNr.setPromptText("Booking number can not be empty");
+            name.setText(tour.getName());
+            seatsBooked.setText(String.valueOf(booking.getSeats()));
+            // þarf að bæta einhverju við sem á að birta
         }
-
-
     }
-*/
+
 }

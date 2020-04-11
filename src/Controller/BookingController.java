@@ -31,8 +31,13 @@ public class BookingController {
     @FXML
     private Text seatsBooked;
     @FXML
+    private Text namePerson;
+    @FXML
+    private Text date;
+    @FXML
+    private Text price;
+    @FXML
     private TextField bookingNr;
-
     private DayTourSearch dayTourSearch;
 
     @FXML
@@ -64,6 +69,9 @@ public class BookingController {
 
             name.setText(tour.getName());
             seatsBooked.setText(String.valueOf(booking.getSeats()));
+            namePerson.setText(booking.getFullName());
+            date.setText(tour.getDate());
+            price.setText(tour.getPrice()*booking.getSeats() + "isk.");
             // þarf að bæta einhverju við sem á að birta
         }
     }

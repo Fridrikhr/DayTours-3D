@@ -1,5 +1,8 @@
 package Controller;
 
+import Model.Booking;
+import Model.DayTourSearch;
+import Model.Tour;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,9 +29,16 @@ public class BookingController {
     @FXML
     private Text name;
     @FXML
-    private Text name1;
+    private Text seatsBooked;
     @FXML
     private TextField bookingNr;
+
+    private DayTourSearch dayTourSearch;
+
+    @FXML
+    public void initialize() {
+        dayTourSearch = new DayTourSearch();
+    }
 
     @FXML
     void backButtonHandler(ActionEvent event) throws IOException {
@@ -43,10 +53,19 @@ public class BookingController {
 
     @FXML
     void searchbookingnrButtonHandler(ActionEvent event) {
-        String regex = "\\d+";
-        Pattern p = Pattern.compile(regex);
-        Matcher m = p.matcher(bookingNr.getText());
-        System.out.println(m);
+        Booking booking = dayTourSearch.searchBookingNumber(bookingNr.getText());
+        if(booking == null) {
+            bookingNr.setText("");
+            bookingNr.setPromptText("Booking number not found");
+        } else {
+            // ná í upplýsingar um tourinn
+            String tourId = String.valueOf(booking.getTourId());
+            Tour tour = dayTourSearch.getTourById(tourId);
+
+            name.setText(tour.getName());
+            seatsBooked.setText(String.valueOf(booking.getSeats()));
+            // þarf að bæta einhverju við sem á að birta
+        }
     }
 
 }

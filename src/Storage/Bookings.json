@@ -1,1 +1,12 @@
-[{"tourId":1,"date":"2020-04-30","firstName":"Almar","lastName":"Teitsson","phonenumber":"112","id":1,"seats":1,"email":"a@i.is"}]
+[
+  {
+    "bookingId":1,
+    "date":"2020-04-30",
+    "firstName":"Almar",
+    "lastName":"Teitsson",
+    "phone":"112",
+    "tourId":1,
+    "seats":1,
+    "email":"a@i.is"
+  }
+]

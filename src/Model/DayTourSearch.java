@@ -39,39 +39,37 @@ public class DayTourSearch {
                 allTours.add(new Tour(id, name, category, description, duration, smallDescription, seats, seatsLeft, tourGuide, date, location, price));
             }
 
-            /*  Read and parse booking.json into allTours */
-            /* not ready
+            /*  Read and parse booking.json into allBookings */
             Object bookingJSON = parser.parse(new FileReader("src/Storage/Bookings.json"));
             JSONArray bookingArray = (JSONArray) bookingJSON;
             for (int i = 0; i < bookingArray.size(); i++) {
                 JSONObject jsonObject = (JSONObject) bookingArray.get(i);
 
-                int id = (int) ((long) jsonObject.get("id"));
-                String name = (String) jsonObject.get("Tour Name");
-                String category = (String) jsonObject.get("Category");
-                String description = (String) jsonObject.get("Description");
-                int duration = (int) ((long) jsonObject.get("Duration"));
-                String smallDescription = (String) jsonObject.get("Small Description");
-                int seats = (int) ((long) jsonObject.get("Seats"));
-                int seatsLeft = (int) ((long) jsonObject.get("Seats Left"));
-                String tourGuide = (String) jsonObject.get("Tour Guide");
-                String date = (String) jsonObject.get("Date");
-                String location = (String) jsonObject.get("Location");
-                int price = (int) ((long) jsonObject.get("Price"));
-                allBookings.add(new Booking());
-
+                int bookingId = (int) ((long) jsonObject.get("bookingId"));
+                int tourId = (int) ((long) jsonObject.get("tourId"));
+                String date = (String) jsonObject.get("date");
+                String firstName = (String) jsonObject.get("firstName");
+                String lastName = (String) jsonObject.get("lastName");
+                String phone = (String) jsonObject.get("phone");
+                int seats = (int) ((long) jsonObject.get("seats"));
+                String email = (String) jsonObject.get("email");
+                allBookings.add(new Booking(bookingId, tourId, date, firstName, lastName, phone, seats, email));
             }
-
-             */
-
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+    public Booking searchBookingNumber(String number) {
+        int n = Integer.parseInt(number);
+        for (Booking booking : allBookings) {
+            if(booking.getBookingId() == n) return booking;
+        }
+        return null; // If not found
+    }
+
     public ArrayList<Tour> getAllTours() {
-        allTours.remove(1);
         return allTours;
     }
 

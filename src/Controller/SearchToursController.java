@@ -140,6 +140,9 @@ public class SearchToursController {
         if(tourNameInput.getText() != null) {
             dayTourSearch.searchName(tourNameInput.getText());
         }
+        if(seatsInput.getText() != null) {
+            dayTourSearch.searchSeats(Integer.valueOf(seatsInput.getText()));
+        }
         //kannski setja filteredTrips = dayTourSearch.getTrips()
         displayTrips(dayTourSearch.getTrips());
     }

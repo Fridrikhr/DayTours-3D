@@ -96,6 +96,16 @@ public class DayTourSearch {
         myFilter = filtered;
     }
 
+    public void searchSeats(int s) {
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            int availableSeats = myFilter.get(i).getSeatsLeft();
+            if (availableSeats >= s) filtered.add(myFilter.get(i));
+        }
+        myFilter = filtered;
+    }
+
     public ArrayList<Tour> getTrips(){
         return myFilter;
     }

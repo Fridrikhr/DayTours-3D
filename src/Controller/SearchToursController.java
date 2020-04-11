@@ -141,8 +141,17 @@ public class SearchToursController {
             dayTourSearch.searchName(tourNameInput.getText());
         }
         if(seatsInput.getText() != null) {
-            dayTourSearch.searchSeats(Integer.valueOf(seatsInput.getText()));
+            dayTourSearch.searchSeats(seatsInput.getText());
         }
+        /*if((minPriceInput.getText() != null) && (maxPriceInput.getText() == null)) {
+            dayTourSearch.searchMinPrice(Integer.valueOf(minPriceInput.getText()));
+        }
+        if((maxPriceInput.getText() != null) && (minPriceInput.getText() == null)) {
+            dayTourSearch.searchMaxPrice(Integer.valueOf(maxPriceInput.getText()));
+        }
+        if ((maxPriceInput.getText() != null) && (minPriceInput.getText() != null)){
+            dayTourSearch.searchPriceSpace(Integer.valueOf(minPriceInput.getText()), Integer.valueOf(maxPriceInput.getText()));
+        }*/
         //kannski setja filteredTrips = dayTourSearch.getTrips()
         displayTrips(dayTourSearch.getTrips());
     }

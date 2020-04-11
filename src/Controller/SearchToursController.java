@@ -14,7 +14,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-
+import java.text.ParseException;
+import java.time.LocalDate;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -134,8 +135,10 @@ public class SearchToursController {
     }
 
     @FXML
-    void searchButtonHandler(ActionEvent event) {
+    void searchButtonHandler(ActionEvent event) throws ParseException {
         dayTourSearch.resetFilter();
+        LocalDate inputStartDate = startDateChoice.getValue();
+        LocalDate inputEndDate = endDateChoice.getValue();
 
         if(!tourNameInput.getText().equals("")) {
             dayTourSearch.searchName(tourNameInput.getText());
@@ -151,6 +154,9 @@ public class SearchToursController {
         }
         if(!minPriceInput.getText().equals("") && !maxPriceInput.getText().equals("")) {
             dayTourSearch.searchPriceSpace(Integer.valueOf(minPriceInput.getText()), Integer.valueOf(maxPriceInput.getText()));
+        }
+        if(inputEndDate != null && inputStartDate != null){
+            dayTourSearch.searchDates(inputStartDate, inputEndDate);
         }
             //kannski setja filteredTrips = dayTourSearch.getTrips()
         displayTrips(dayTourSearch.getTrips());

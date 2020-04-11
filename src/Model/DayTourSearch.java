@@ -1,11 +1,16 @@
 package Model;
 
+import Controller.TourController;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.time.LocalDate;
 
 
 public class DayTourSearch {
@@ -136,6 +141,23 @@ public class DayTourSearch {
             if ((min <= x) && (x <= max)) filtered.add(myFilter.get(i));
         }
 
+        myFilter = filtered;
+    }
+
+    public void searchDates(LocalDate start, LocalDate end) throws ParseException {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        ArrayList<Tour> filtered = new ArrayList<Tour>();
+        Date inputStart = sdf.parse(start.toString());
+        Date inputEnd = sdf.parse(end.toString());
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            String date = myFilter.get(i).getDate();
+            Date tripDate = sdf.parse(date);
+            if(inputStart.before(tripDate) && inputEnd.after(tripDate) || inputStart.equals(tripDate) || inputEnd.equals(tripDate)){
+                filtered.add(myFilter.get(i));
+            }
+        }
         myFilter = filtered;
     }
 

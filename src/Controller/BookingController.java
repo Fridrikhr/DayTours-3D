@@ -62,6 +62,11 @@ public class BookingController {
         if(booking == null) {
             bookingNr.setText("");
             bookingNr.setPromptText("Booking number not found");
+            name.setText("");
+            seatsBooked.setText("");
+            namePerson.setText("");
+            date.setText("");
+            price.setText("");
         } else {
             // ná í upplýsingar um tourinn
             String tourId = String.valueOf(booking.getTourId());
@@ -72,7 +77,6 @@ public class BookingController {
             namePerson.setText(booking.getFullName());
             date.setText(tour.getDate());
             price.setText(tour.getPrice()*booking.getSeats() + "isk.");
-            // þarf að bæta einhverju við sem á að birta
         }
     }
 

@@ -53,4 +53,8 @@ public class Booking {
     public String getEmail() {
         return this.email;
     }
+
+    public String getFullName() {
+        return this.firstName + " " + this.lastName;
+    }
 }

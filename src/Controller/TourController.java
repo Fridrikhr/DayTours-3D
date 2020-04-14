@@ -78,7 +78,8 @@ public class TourController {
         seats.setText(tour.getSeatsLeft() + " available seats out of " + tour.getSeats());
         price.setText(Integer.toString(tour.getPrice()));
         rating.setText("This tour is rated "+ tour.getRating() + " out of 10");
-        imageTour.setImage(tour.getImage());
+        Image image = new Image(tour.getImageSrc());
+        imageTour.setImage(image);
     }
 
     @FXML

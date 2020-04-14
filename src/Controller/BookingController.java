@@ -11,10 +11,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import javafx.scene.image.ImageView;
+
+
 
 import java.io.IOException;
 
@@ -39,7 +41,8 @@ public class BookingController {
     @FXML
     private TextField bookingNr;
     private DayTourSearch dayTourSearch;
-
+    @FXML
+    private ImageView bookingImage;
     @FXML
     public void initialize() {
         dayTourSearch = new DayTourSearch();
@@ -77,6 +80,8 @@ public class BookingController {
             namePerson.setText(booking.getFullName());
             date.setText(tour.getDate());
             price.setText(tour.getPrice()*booking.getSeats() + "isk.");
+            Image image = new Image(tour.getImageSrc());
+            bookingImage.setImage(image);
         }
     }
 

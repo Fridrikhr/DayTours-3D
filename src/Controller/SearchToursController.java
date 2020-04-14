@@ -152,9 +152,12 @@ public class SearchToursController {
         if(!minPriceInput.getText().equals("") && !maxPriceInput.getText().equals("")) {
             dayTourSearch.searchPriceSpace(Integer.valueOf(minPriceInput.getText()), Integer.valueOf(maxPriceInput.getText()));
         }
-            //kannski setja filteredTrips = dayTourSearch.getTrips()
-        displayTrips(dayTourSearch.getTrips());
+
+        // if(!startDateChoice.getText().equals(""))
+
+        // getTrip(dayTourSearch.getTrips());
     }
+
     public void resetTable() {
         resultTable.getItems().clear();
     }

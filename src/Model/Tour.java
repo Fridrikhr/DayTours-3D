@@ -1,5 +1,7 @@
 package Model;
 
+import javafx.scene.image.Image;
+
 public class Tour {
     private int id;
     private String name;
@@ -14,6 +16,7 @@ public class Tour {
     private String location;
     private int price;
     private String rating;
+    private String image;
 
     public Tour(int id, String name, String category, String description, int duration, String smallDescription, int seats, int seatsLeft, String tourGuide, String date, String location, int price, String rating)
     {
@@ -30,6 +33,7 @@ public class Tour {
         this.location = location;
         this.price = price;
         this.rating = rating;
+        this.image = image;
     }
 
     public int getId() {
@@ -46,6 +50,11 @@ public class Tour {
 
     public String getDescription() {
         return this.description;
+    }
+
+
+    public void reserve(int seats) {
+        this.seatsLeft -= seats;
     }
 
     public int getDuration() {
@@ -81,4 +90,9 @@ public class Tour {
     }
 
     public String getRating() { return this.rating; }
+
+    public Image getImage() {
+            Image image = new Image(getClass().getResourceAsStream(this.image));
+        return image;
+    }
 }

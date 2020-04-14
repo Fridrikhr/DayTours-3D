@@ -11,6 +11,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
 
 import java.io.IOException;
 
@@ -36,6 +39,8 @@ public class TourController {
     private Text guide;
     @FXML
     private Text info;
+    @FXML
+    private ImageView imageTour;
 
     Tour currentTour;
     DayTourSearch dayTourSearch;
@@ -73,6 +78,7 @@ public class TourController {
         seats.setText(tour.getSeatsLeft() + " available seats out of " + tour.getSeats());
         price.setText(Integer.toString(tour.getPrice()));
         rating.setText("This tour is rated "+ tour.getRating() + " out of 10");
+        imageTour.setImage(tour.getImage());
     }
 
     @FXML

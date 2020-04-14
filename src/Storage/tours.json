@@ -13,7 +13,7 @@
     "Location": "East region",
     "Price": 9999,
     "Rating": "7",
-    "Image": "src/images/test.JPG"
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
     "Location": "East Region",
     "Price": 2500,
     "Rating": "9",
-    "Image": "test.JPG"
+    "Image": "./images/ísl2.JPG"
   },
   {
     "id": 3,
@@ -44,7 +44,8 @@
     "Date": "2020-05-04",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl3.JPG"
   },
   {
     "id": 4,
@@ -59,7 +60,8 @@
     "Date": "2020-03-04",
     "Location": "South Region",
     "Price": 25000,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 5,
@@ -74,7 +76,8 @@
     "Date": "2020-10-04",
     "Location": "South Region",
     "Price": 20000,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 6,
@@ -89,7 +92,8 @@
     "Date": "2020-12-04",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 7,
@@ -104,7 +108,8 @@
     "Date": "2020-09-12",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 8,
@@ -119,7 +124,8 @@
     "Date": "2020-07-22",
     "Location": "South Region",
     "Price": 7000,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 9,
@@ -134,7 +140,8 @@
     "Date": "2020-02-02",
     "Location": "East Region",
     "Price": 13500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 10,
@@ -149,7 +156,8 @@
     "Date": "2020-08-07",
     "Location": "North Region",
     "Price": 27500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 11,
@@ -164,7 +172,8 @@
     "Date": "2020-12-04",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 12,
@@ -179,7 +188,8 @@
     "Date": "2020-12-04",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 13,
@@ -194,7 +204,8 @@
     "Date": "2020-12-04",
     "Location": "East region",
     "Price": 9999,
-    "Rating": "9,5"
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 14,
@@ -209,7 +220,8 @@
     "Date": "2020-07-22",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 15,
@@ -224,7 +236,8 @@
     "Date": "2020-06-09",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 16,
@@ -239,7 +252,8 @@
     "Date": "2020-09-12",
     "Location": "South Region",
     "Price": 25000,
-    "Rating": "9,5"
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 17,
@@ -254,7 +268,8 @@
     "Date": "2020-06-09",
     "Location": "South Region",
     "Price": 20000,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 18,
@@ -269,7 +284,8 @@
     "Date": "2020-06-09",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "6"
+    "Rating": "6",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 19,
@@ -284,7 +300,8 @@
     "Date": "2020-09-12",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 20,
@@ -299,7 +316,8 @@
     "Date": "2020-01-03",
     "Location": "South Region",
     "Price": 7000,
-    "Rating": "6,5"
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 21,
@@ -314,7 +332,8 @@
     "Date": "2020-05-04",
     "Location": "East Region",
     "Price": 13500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 22,
@@ -329,7 +348,8 @@
     "Date": "2020-09-12",
     "Location": "North Region",
     "Price": 27500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 23,
@@ -344,7 +364,8 @@
     "Date": "2020-03-04",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 24,
@@ -359,7 +380,8 @@
     "Date": "2020-06-09",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 25,
@@ -374,7 +396,8 @@
     "Date": "2020-08-07",
     "Location": "East region",
     "Price": 9999,
-    "Rating": "9,5"
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 26,
@@ -389,7 +412,8 @@
     "Date": "2020-08-07",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 27,
@@ -404,7 +428,8 @@
     "Date": "2020-08-07",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "9,5"
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 28,
@@ -419,7 +444,8 @@
     "Date": "2020-01-03",
     "Location": "South Region",
     "Price": 25000,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 29,
@@ -434,7 +460,8 @@
     "Date": "2020-06-09",
     "Location": "South Region",
     "Price": 20000,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 30,
@@ -449,7 +476,8 @@
     "Date": "2020-09-12",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 31,
@@ -464,7 +492,8 @@
     "Date": "2020-11-22",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 32,
@@ -479,7 +508,8 @@
     "Date": "2020-04-18",
     "Location": "South Region",
     "Price": 7000,
-    "Rating": "6"
+    "Rating": "6",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 33,
@@ -494,7 +524,8 @@
     "Date": "2020-07-22",
     "Location": "East Region",
     "Price": 13500,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 34,
@@ -509,7 +540,8 @@
     "Date": "2020-12-04",
     "Location": "North Region",
     "Price": 27500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 35,
@@ -524,7 +556,8 @@
     "Date": "2020-06-09",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 36,
@@ -539,7 +572,8 @@
     "Date": "2020-09-12",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 37,
@@ -554,7 +588,8 @@
     "Date": "2020-04-18",
     "Location": "East region",
     "Price": 9999,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 38,
@@ -569,7 +604,8 @@
     "Date": "2020-07-22",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 39,
@@ -584,7 +620,8 @@
     "Date": "2020-03-04",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 40,
@@ -599,7 +636,8 @@
     "Date": "2020-08-07",
     "Location": "South Region",
     "Price": 25000,
-    "Rating": "9,5"
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 41,
@@ -614,7 +652,8 @@
     "Date": "2020-05-04",
     "Location": "South Region",
     "Price": 20000,
-    "Rating": "6,5"
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 42,
@@ -627,10 +666,10 @@
     "Seats Left": 60,
     "Tour Guide": "Karl Jónsson",
     "Date": "2020-11-22",
-
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 43,
@@ -645,7 +684,8 @@
     "Date": "2020-02-02",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 44,
@@ -660,7 +700,8 @@
     "Date": "2020-03-04",
     "Location": "South Region",
     "Price": 7000,
-    "Rating": "6,5"
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 45,
@@ -675,7 +716,8 @@
     "Date": "2020-04-18",
     "Location": "East Region",
     "Price": 13500,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 46,
@@ -690,7 +732,8 @@
     "Date": "2020-07-22",
     "Location": "North Region",
     "Price": 27500,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 47,
@@ -705,7 +748,8 @@
     "Date": "2020-09-12",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "6"
+    "Rating": "6",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 48,
@@ -720,7 +764,8 @@
     "Date": "2020-08-07",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 49,
@@ -735,7 +780,8 @@
     "Date": "2020-06-09",
     "Location": "East region",
     "Price": 9999,
-    "Rating": "9,5"
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 50,
@@ -750,7 +796,8 @@
     "Date": "2020-09-12",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 51,
@@ -765,7 +812,8 @@
     "Date": "2020-02-02",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 52,
@@ -780,7 +828,8 @@
     "Date": "2020-07-22",
     "Location": "South Region",
     "Price": 25000,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 53,
@@ -795,7 +844,8 @@
     "Date": "2020-10-04",
     "Location": "South Region",
     "Price": 20000,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 54,
@@ -810,7 +860,8 @@
     "Date": "2020-10-04",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "6,5"
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 55,
@@ -825,7 +876,8 @@
     "Date": "2020-06-09",
     "Location": "Capital Region",
     "Price": 2500,
-    "Rating": "8"
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 56,
@@ -840,7 +892,8 @@
     "Date": "2020-03-04",
     "Location": "South Region",
     "Price": 7000,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 57,
@@ -855,7 +908,8 @@
     "Date": "2020-07-22",
     "Location": "East Region",
     "Price": 13500,
-    "Rating": "7,5"
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 58,
@@ -870,7 +924,8 @@
     "Date": "2020-06-09",
     "Location": "North Region",
     "Price": 27500,
-    "Rating": "8,5"
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 59,
@@ -885,7 +940,8 @@
     "Date": "2020-02-02",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 60,
@@ -900,6 +956,7 @@
     "Date": "2020-09-12",
     "Location": "North Region",
     "Price": 37500,
-    "Rating": "9,5"
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   }
 ]

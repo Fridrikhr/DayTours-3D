@@ -74,7 +74,8 @@
             <Text fx:id="rating" layoutX="419.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rating">
                <font>
                   <Font size="14.0" />
-               </font></Text>
+               </font>
+            </Text>
             <Text fx:id="length" layoutX="723.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="length">
                <font>
                   <Font size="14.0" />
@@ -103,7 +104,7 @@
                 <Rectangle height="${root.height}" width="${root.width}" />
             </clip>
             </Pane>
-            <ImageView fx:id="imageTour" fitHeight="150.0" fitWidth="200.0" layoutX="322.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imageTour" fitHeight="174.0" fitWidth="348.0" layoutX="361.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
     </children>
   </AnchorPane>
   </children>

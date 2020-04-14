@@ -12,7 +12,8 @@
     "Date": "2020-07-04",
     "Location": "East region",
     "Price": 9999,
-    "Rating": "7"
+    "Rating": "7",
+    "Image": "src/images/test.JPG"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     "Date": "2020-04-05",
     "Location": "East Region",
     "Price": 2500,
-    "Rating": "9"
+    "Rating": "9",
+    "Image": "test.JPG"
   },
   {
     "id": 3,

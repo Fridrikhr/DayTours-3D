@@ -53,7 +53,7 @@ public class SearchToursController {
 
     private ArrayList<Tour> filteredTours;
 
-    private Tour testTour = new Tour(1, "Nafn á tour", "nature", "description", 6, "small description", 10, 8, "Bjöggi", "12/4/2020", "Reykjavík", 10000, "8");
+    private Tour testTour = new Tour(1, "Nafn á tour", "nature", "description", 6, "small description", 10, 8, "Bjöggi", "12/4/2020", "Reykjavík", 10000, "8", "test.JPG");
 
 
     @FXML

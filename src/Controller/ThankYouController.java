@@ -1,15 +1,14 @@
 package Controller;
 
+import Model.Booking;
+import Model.Tour;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import Model.Booking;
-import Model.Tour;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -39,11 +38,12 @@ public class ThankYouController {
     private Label customerPhone;
 
     @FXML
-    private Button buttonClose;
+    private Label tourBooking;
 
 
     public void initData(Booking booking, Tour tour) {
 
+        tourBooking.setText(String.valueOf(booking.getBookingId()));
         customerName.setText(booking.getFullName());
         customerEmail.setText(booking.getEmail());
         customerPhone.setText(booking.getPhone());
@@ -53,10 +53,8 @@ public class ThankYouController {
         tourSeats.setText(booking.getSeats() + " seats");
     }
 
-
     @FXML
     void backButtonHandler(ActionEvent event) throws IOException {
-        System.out.println("hallo");
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getClassLoader().getResource("./View/searchTours.fxml"));
         Parent parent = loader.load();
@@ -65,5 +63,4 @@ public class ThankYouController {
         window.setScene(scene);
         window.show();
     }
-
 }

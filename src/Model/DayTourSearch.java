@@ -42,7 +42,8 @@ public class DayTourSearch {
                 String location = (String) jsonObject.get("Location");
                 int price = (int) ((long) jsonObject.get("Price"));
                 String rating = (String) jsonObject.get("Rating");
-                allTours.add(new Tour(id, name, category, description, duration, smallDescription, seats, seatsLeft, tourGuide, date, location, price, rating));
+                String image = (String) jsonObject.get("Image");
+                allTours.add(new Tour(id, name, category, description, duration, smallDescription, seats, seatsLeft, tourGuide, date, location, price, rating, image));
             }
 
             /*  Read and parse booking.json into allBookings */

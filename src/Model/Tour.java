@@ -47,6 +47,9 @@ public class Tour {
     }
 
 
+    public void reserve(int seats) {
+        this.seatsLeft -= seats;
+    }
 
     public int getDuration() {
         return this.duration;

@@ -16,7 +16,7 @@ public class DayTourSearch {
     private ArrayList<Tour> myFilter = allTours; // The tours we are going to display, matching the search
 
     public DayTourSearch() {
-
+        if(!allTours.isEmpty()) return;
         JSONParser parser = new JSONParser();
         try {
             /*  Read and parse tours.json into allTours */
@@ -55,6 +55,9 @@ public class DayTourSearch {
                 int seats = (int) ((long) jsonObject.get("seats"));
                 String email = (String) jsonObject.get("email");
                 allBookings.add(new Booking(bookingId, tourId, date, firstName, lastName, phone, seats, email));
+                // find the tour and reserve the seats
+                Tour tour = getTourById(String.valueOf(tourId));
+                tour.reserve(seats);
             }
 
         } catch (Exception e) {
@@ -109,16 +112,21 @@ public class DayTourSearch {
             file.write(jsonArray.toJSONString());
             file.flush();
             file.close();
-
         } catch (Exception e) {
             System.out.println("Failed.");
             return false;
         }
 
-        // insert into allBookings variable
+        // insert into allBookings and reserve seats
         allBookings.add(booking);
+        reserveSeats(booking.getTourId(), booking.getSeats());
         // return true if successful, else false
         return true;
+    }
+
+    private void reserveSeats(int tourId, int seats) {
+        Tour tour = getTourById(String.valueOf(tourId));
+        tour.reserve(seats);
     }
 
     public ArrayList<Tour> getAllTours() {

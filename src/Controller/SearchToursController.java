@@ -14,7 +14,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-
+import java.text.ParseException;
+import java.time.LocalDate;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,9 +27,9 @@ public class SearchToursController {
     @FXML
     private DatePicker endDateChoice;
     @FXML
-    private ChoiceBox<?> locationChoice;
+    private ChoiceBox locationChoice;
     @FXML
-    private ChoiceBox<?> interestChoice;
+    private ChoiceBox interestChoice;
     @FXML
     private TextField maxPriceInput;
     @FXML
@@ -37,7 +38,6 @@ public class SearchToursController {
     private TextField seatsInput;
     @FXML
     private TextField tourNameInput;
-
     @FXML
     private Button searchButton;
     @FXML
@@ -59,6 +59,11 @@ public class SearchToursController {
     @FXML
     public void initialize() {
         dayTourSearch = new DayTourSearch();
+        ArrayList<ArrayList<String>> info = dayTourSearch.getInfo();
+        ObservableList<String> locations = FXCollections.observableArrayList(info.get(1));
+        locationChoice.setItems(locations);
+        ObservableList<String> Category = FXCollections.observableArrayList(info.get(0));
+        interestChoice.setItems(Category);
 
         // Setur efstu röðina í töfluna
         List<String> columnNames = Arrays.asList("Name","Available Seats","Duration","Date","Price", "id");
@@ -134,8 +139,10 @@ public class SearchToursController {
     }
 
     @FXML
-    void searchButtonHandler(ActionEvent event) {
+    void searchButtonHandler(ActionEvent event) throws ParseException {
         dayTourSearch.resetFilter();
+        LocalDate inputStartDate = startDateChoice.getValue();
+        LocalDate inputEndDate = endDateChoice.getValue();
 
         if(!tourNameInput.getText().equals("")) {
             dayTourSearch.searchName(tourNameInput.getText());
@@ -151,6 +158,16 @@ public class SearchToursController {
         }
         if(!minPriceInput.getText().equals("") && !maxPriceInput.getText().equals("")) {
             dayTourSearch.searchPriceSpace(Integer.valueOf(minPriceInput.getText()), Integer.valueOf(maxPriceInput.getText()));
+        }
+        if(inputEndDate != null && inputStartDate != null) {
+            dayTourSearch.searchDates(inputStartDate, inputEndDate);
+        }
+        if (locationChoice.getValue() != null) {
+            String location = locationChoice.getValue().toString();
+            dayTourSearch.searchLocations(location);
+        }
+        if(interestChoice.getValue() != null) {
+            dayTourSearch.searchCategory(interestChoice.getValue().toString());
         }
             //kannski setja filteredTrips = dayTourSearch.getTrips()
         displayTrips(dayTourSearch.getTrips());

@@ -20,6 +20,7 @@ public class Booking {
         this.bookingId = bookingId;
         this.seats = seats;
         this.email = email;
+
     }
 
     public int getTourId() {

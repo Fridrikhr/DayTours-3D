@@ -13,8 +13,9 @@ public class Tour {
     private String date;
     private String location;
     private int price;
+    private String rating;
 
-    public Tour(int id, String name, String category, String description, int duration, String smallDescription, int seats, int seatsLeft, String tourGuide, String date, String location, int price)
+    public Tour(int id, String name, String category, String description, int duration, String smallDescription, int seats, int seatsLeft, String tourGuide, String date, String location, int price, String rating)
     {
         this.id = id;
         this.name = name;
@@ -28,6 +29,7 @@ public class Tour {
         this.date = date;
         this.location = location;
         this.price = price;
+        this.rating = rating;
     }
 
     public int getId() {
@@ -45,8 +47,6 @@ public class Tour {
     public String getDescription() {
         return this.description;
     }
-
-
 
     public int getDuration() {
         return this.duration;
@@ -79,4 +79,6 @@ public class Tour {
     public int getPrice() {
         return this.price;
     }
+
+    public String getRating() { return this.rating; }
 }

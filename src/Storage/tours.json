@@ -11,7 +11,8 @@
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-07-04",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "7"
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
     "Tour Guide": "Almar Teitsson",
     "Date": "2020-04-05",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9"
   },
   {
     "id": 3,
@@ -39,7 +41,8 @@
     "Tour Guide": "Björgvin Hall",
     "Date": "2020-05-04",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8"
   },
   {
     "id": 4,
@@ -53,7 +56,8 @@
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
     "Date": "2020-03-04",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "7"
   },
   {
     "id": 5,
@@ -67,7 +71,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-10-04",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "9"
   },
   {
     "id": 6,
@@ -81,7 +86,8 @@
     "Tour Guide": "Karl Jónsson",
     "Date": "2020-12-04",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8"
   },
   {
     "id": 7,
@@ -95,7 +101,8 @@
     "Tour Guide": "Guðmundur Guðmundsson",
     "Date": "2020-09-12",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8"
   },
   {
     "id": 8,
@@ -109,7 +116,8 @@
     "Tour Guide": "Haraldur Hafþórsson",
     "Date": "2020-07-22",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "7,5"
   },
   {
     "id": 9,
@@ -123,7 +131,8 @@
     "Tour Guide": "Baldur Gunnarsson",
     "Date": "2020-02-02",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "8,5"
   },
   {
     "id": 10,
@@ -137,7 +146,8 @@
     "Tour Guide": "Gunnar Gunnarsson",
     "Date": "2020-08-07",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "9"
   },
   {
     "id": 11,
@@ -151,7 +161,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-12-04",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "7"
   },
   {
     "id": 12,
@@ -165,7 +176,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-12-04",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "8,5"
   },
   {
     "id": 13,
@@ -179,7 +191,8 @@
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-12-04",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9,5"
   },
   {
     "id": 14,
@@ -193,7 +206,8 @@
     "Tour Guide": "Almar Teitsson",
     "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9"
   },
   {
     "id": 15,
@@ -207,7 +221,8 @@
     "Tour Guide": "Björgvin Hall",
     "Date": "2020-06-09",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5"
   },
   {
     "id": 16,
@@ -221,7 +236,8 @@
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
     "Date": "2020-09-12",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "9,5"
   },
   {
     "id": 17,
@@ -235,7 +251,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-06-09",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "8"
   },
   {
     "id": 18,
@@ -249,7 +266,8 @@
     "Tour Guide": "Karl Jónsson",
     "Date": "2020-06-09",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "6"
   },
   {
     "id": 19,
@@ -263,7 +281,8 @@
     "Tour Guide": "Guðmundur Guðmundsson",
     "Date": "2020-09-12",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7,5"
   },
   {
     "id": 20,
@@ -277,7 +296,8 @@
     "Tour Guide": "Haraldur Hafþórsson",
     "Date": "2020-01-03",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "6,5"
   },
   {
     "id": 21,
@@ -291,7 +311,8 @@
     "Tour Guide": "Baldur Gunnarsson",
     "Date": "2020-05-04",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "9"
   },
   {
     "id": 22,
@@ -305,7 +326,8 @@
     "Tour Guide": "Gunnar Gunnarsson",
     "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "8,5"
   },
   {
     "id": 23,
@@ -319,7 +341,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-03-04",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "7,5"
   },
   {
     "id": 24,
@@ -333,7 +356,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-06-09",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "8"
   },
   {
     "id": 25,
@@ -347,7 +371,8 @@
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-08-07",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9,5"
   },
   {
     "id": 26,
@@ -361,7 +386,8 @@
     "Tour Guide": "Almar Teitsson",
     "Date": "2020-08-07",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5"
   },
   {
     "id": 27,
@@ -375,7 +401,8 @@
     "Tour Guide": "Björgvin Hall",
     "Date": "2020-08-07",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9,5"
   },
   {
     "id": 28,
@@ -389,7 +416,8 @@
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
     "Date": "2020-01-03",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "7,5"
   },
   {
     "id": 29,
@@ -403,7 +431,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-06-09",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "8,5"
   },
   {
     "id": 30,
@@ -417,7 +446,8 @@
     "Tour Guide": "Karl Jónsson",
     "Date": "2020-09-12",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9"
   },
   {
     "id": 31,
@@ -431,7 +461,8 @@
     "Tour Guide": "Guðmundur Guðmundsson",
     "Date": "2020-11-22",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7"
   },
   {
     "id": 32,
@@ -445,7 +476,8 @@
     "Tour Guide": "Haraldur Hafþórsson",
     "Date": "2020-04-18",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "6"
   },
   {
     "id": 33,
@@ -459,7 +491,8 @@
     "Tour Guide": "Baldur Gunnarsson",
     "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "8"
   },
   {
     "id": 34,
@@ -473,7 +506,8 @@
     "Tour Guide": "Gunnar Gunnarsson",
     "Date": "2020-12-04",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "8,5"
   },
   {
     "id": 35,
@@ -487,7 +521,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-06-09",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "9"
   },
   {
     "id": 36,
@@ -501,7 +536,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "7"
   },
   {
     "id": 37,
@@ -515,7 +551,8 @@
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-04-18",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9"
   },
   {
     "id": 38,
@@ -529,7 +566,8 @@
     "Tour Guide": "Almar Teitsson",
     "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5"
   },
   {
     "id": 39,
@@ -543,7 +581,8 @@
     "Tour Guide": "Björgvin Hall",
     "Date": "2020-03-04",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9"
   },
   {
     "id": 40,
@@ -557,7 +596,8 @@
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
     "Date": "2020-08-07",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "9,5"
   },
   {
     "id": 41,
@@ -571,7 +611,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-05-04",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "6,5"
   },
   {
     "id": 42,
@@ -586,7 +627,8 @@
     "Date": "2020-11-22",
 
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7"
   },
   {
     "id": 43,
@@ -600,7 +642,8 @@
     "Tour Guide": "Guðmundur Guðmundsson",
     "Date": "2020-02-02",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7,5"
   },
   {
     "id": 44,
@@ -614,7 +657,8 @@
     "Tour Guide": "Haraldur Hafþórsson",
     "Date": "2020-03-04",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "6,5"
   },
   {
     "id": 45,
@@ -628,7 +672,8 @@
     "Tour Guide": "Baldur Gunnarsson",
     "Date": "2020-04-18",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "7"
   },
   {
     "id": 46,
@@ -642,7 +687,8 @@
     "Tour Guide": "Gunnar Gunnarsson",
     "Date": "2020-07-22",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "7,5"
   },
   {
     "id": 47,
@@ -656,7 +702,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "6"
   },
   {
     "id": 48,
@@ -670,7 +717,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-08-07",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "8"
   },
   {
     "id": 49,
@@ -684,7 +732,8 @@
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-06-09",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9,5"
   },
   {
     "id": 50,
@@ -698,7 +747,8 @@
     "Tour Guide": "Almar Teitsson",
     "Date": "2020-09-12",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5"
   },
   {
     "id": 51,
@@ -712,7 +762,8 @@
     "Tour Guide": "Björgvin Hall",
     "Date": "2020-02-02",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9"
   },
   {
     "id": 52,
@@ -726,7 +777,8 @@
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
     "Date": "2020-07-22",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "8"
   },
   {
     "id": 53,
@@ -740,7 +792,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-10-04",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "7"
   },
   {
     "id": 54,
@@ -754,7 +807,8 @@
     "Tour Guide": "Karl Jónsson",
     "Date": "2020-10-04",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "6,5"
   },
   {
     "id": 55,
@@ -768,7 +822,8 @@
     "Tour Guide": "Guðmundur Guðmundsson",
     "Date": "2020-06-09",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8"
   },
   {
     "id": 56,
@@ -782,7 +837,8 @@
     "Tour Guide": "Haraldur Hafþórsson",
     "Date": "2020-03-04",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "7,5"
   },
   {
     "id": 57,
@@ -796,7 +852,8 @@
     "Tour Guide": "Baldur Gunnarsson",
     "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "7,5"
   },
   {
     "id": 58,
@@ -810,7 +867,8 @@
     "Tour Guide": "Gunnar Gunnarsson",
     "Date": "2020-06-09",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "8,5"
   },
   {
     "id": 59,
@@ -824,7 +882,8 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-02-02",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "9"
   },
   {
     "id": 60,
@@ -838,6 +897,7 @@
     "Tour Guide": "Jón Jónsson",
     "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "9,5"
   }
 ]

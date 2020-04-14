@@ -18,7 +18,7 @@ public class Tour {
     private String rating;
     private String image;
 
-    public Tour(int id, String name, String category, String description, int duration, String smallDescription, int seats, int seatsLeft, String tourGuide, String date, String location, int price, String rating)
+    public Tour(int id, String name, String category, String description, int duration, String smallDescription, int seats, int seatsLeft, String tourGuide, String date, String location, int price, String rating, String image)
     {
         this.id = id;
         this.name = name;

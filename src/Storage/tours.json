@@ -11,7 +11,8 @@
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-07-04",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "image": "src/images/test.JPG"
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
     "Tour Guide": "Almar Teitsson",
     "Date": "2020-04-05",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "image": "test.JPG"
   },
   {
     "id": 3,

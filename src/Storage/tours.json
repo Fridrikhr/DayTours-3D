@@ -10,7 +10,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-07-04",
-    "Location": "East region",
+    "Location": "East Region",
     "Price": 9999,
     "Rating": "7",
     "Image": "./images/ísl1.JPG"
@@ -202,7 +202,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-12-04",
-    "Location": "East region",
+    "Location": "East Region",
     "Price": 9999,
     "Rating": "9,5",
     "Image": "./images/ísl1.JPG"
@@ -394,7 +394,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-08-07",
-    "Location": "East region",
+    "Location": "East Region",
     "Price": 9999,
     "Rating": "9,5",
     "Image": "./images/ísl1.JPG"
@@ -586,7 +586,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-04-18",
-    "Location": "East region",
+    "Location": "East Region",
     "Price": 9999,
     "Rating": "9",
     "Image": "./images/ísl1.JPG"
@@ -778,7 +778,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-06-09",
-    "Location": "East region",
+    "Location": "East Region",
     "Price": 9999,
     "Rating": "9,5",
     "Image": "./images/ísl1.JPG"

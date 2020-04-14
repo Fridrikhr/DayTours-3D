@@ -137,10 +137,22 @@ public class SearchToursController {
     void searchButtonHandler(ActionEvent event) {
         dayTourSearch.resetFilter();
 
-        if(tourNameInput.getText() != null) {
+        if(!tourNameInput.getText().equals("")) {
             dayTourSearch.searchName(tourNameInput.getText());
         }
-        //kannski setja filteredTrips = dayTourSearch.getTrips()
+        if(!seatsInput.getText().equals("")) {
+            dayTourSearch.searchSeats(Integer.valueOf(seatsInput.getText()));
+        }
+        if(!minPriceInput.getText().equals("") && maxPriceInput.getText().equals("")) {
+            dayTourSearch.searchMinPrice(Integer.valueOf(minPriceInput.getText()));
+        }
+        if(!maxPriceInput.getText().equals("") && minPriceInput.getText().equals("")) {
+            dayTourSearch.searchMaxPrice(Integer.valueOf(maxPriceInput.getText()));
+        }
+        if(!minPriceInput.getText().equals("") && !maxPriceInput.getText().equals("")) {
+            dayTourSearch.searchPriceSpace(Integer.valueOf(minPriceInput.getText()), Integer.valueOf(maxPriceInput.getText()));
+        }
+            //kannski setja filteredTrips = dayTourSearch.getTrips()
         displayTrips(dayTourSearch.getTrips());
     }
     public void resetTable() {

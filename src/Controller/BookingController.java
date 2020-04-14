@@ -31,8 +31,13 @@ public class BookingController {
     @FXML
     private Text seatsBooked;
     @FXML
+    private Text namePerson;
+    @FXML
+    private Text date;
+    @FXML
+    private Text price;
+    @FXML
     private TextField bookingNr;
-
     private DayTourSearch dayTourSearch;
 
     @FXML
@@ -57,6 +62,11 @@ public class BookingController {
         if(booking == null) {
             bookingNr.setText("");
             bookingNr.setPromptText("Booking number not found");
+            name.setText("");
+            seatsBooked.setText("");
+            namePerson.setText("");
+            date.setText("");
+            price.setText("");
         } else {
             // ná í upplýsingar um tourinn
             String tourId = String.valueOf(booking.getTourId());
@@ -64,7 +74,9 @@ public class BookingController {
 
             name.setText(tour.getName());
             seatsBooked.setText(String.valueOf(booking.getSeats()));
-            // þarf að bæta einhverju við sem á að birta
+            namePerson.setText(booking.getFullName());
+            date.setText(tour.getDate());
+            price.setText(tour.getPrice()*booking.getSeats() + "isk.");
         }
     }
 

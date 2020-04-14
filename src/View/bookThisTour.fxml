@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BookThisTourController">
+  <children>
+    <MenuBar minHeight="-Infinity" prefWidth="1000.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="1069.0">
+    <children>
+            <Text fx:id="name" layoutX="37.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="529.6000366210938">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <Label layoutX="41.0" layoutY="60.0" text="Tour length:" textFill="#000000a5" />
+            <Label layoutX="277.0" layoutY="60.0" text="Date:" textFill="#000000b4" />
+            <TextField fx:id="seats" layoutX="166.0" layoutY="129.0" onKeyReleased="#onChangeSeats" prefHeight="31.0" prefWidth="46.0" />
+            <Text fx:id="length" layoutX="167.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="length" wrappingWidth="81.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fx:id="date" layoutX="390.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date" wrappingWidth="87.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fx:id="price" layoutX="167.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price" wrappingWidth="106.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Label layoutX="41.0" layoutY="96.0" text="Total price:" textFill="#000000af" />
+            <Label layoutX="40.0" layoutY="134.0" text="Number of seats:" textFill="#000000a5" />
+            <AnchorPane layoutX="23.0" layoutY="173.0" prefHeight="200.0" prefWidth="626.0">
+               <children>
+                  <TextField fx:id="firstName" layoutX="143.0" layoutY="45.0" />
+                  <Label layoutX="19.0" layoutY="50.0" text="First name:" textFill="#000000a5" />
+                  <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill in more information about you." />
+                  <Label layoutX="19.0" layoutY="87.0" text="Last name:" textFill="#000000a5" />
+                  <TextField fx:id="lastName" layoutX="143.0" layoutY="82.0" />
+                  <TextField fx:id="email" layoutX="143.0" layoutY="122.0" />
+                  <Label layoutX="19.0" layoutY="127.0" text="Email:" textFill="#000000a5" />
+                  <Label layoutX="19.0" layoutY="168.0" text="Phone:" textFill="#000000a5" />
+                  <TextField fx:id="phone" layoutX="143.0" layoutY="163.0" />
+                  <Label fx:id="firstNameError" layoutX="341.0" layoutY="50.0" prefHeight="21.0" prefWidth="273.0" text="First name can not be empty" textFill="#000000a5" />
+                  <Label fx:id="lastNameError" layoutX="341.0" layoutY="88.0" prefHeight="21.0" prefWidth="273.0" text="Last name can not be empty" textFill="#000000a5" />
+                  <Label fx:id="phoneError" layoutX="341.0" layoutY="166.0" prefHeight="21.0" prefWidth="273.0" text="Phone must be a real phone number" textFill="#000000a5" />
+                  <Label fx:id="emailError" layoutX="341.0" layoutY="127.0" prefHeight="21.0" prefWidth="273.0" text="Email must be a real email" textFill="#000000a5" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="bookButton" layoutX="909.0" layoutY="420.0" mnemonicParsing="false" onAction="#bookButtonHandler" text="Book this tour" />
+            <Button fx:id="backButton" layoutX="41.0" layoutY="429.0" mnemonicParsing="false" onAction="#backButtonHandler" text="Back" />
+            <Label fx:id="numberOfSeatsError" layoutX="228.0" layoutY="134.0" prefHeight="21.0" prefWidth="709.0" text="Must be grater than 0 and can not be grater then the number of avalible seats" textFill="#000000a5" />
+            <Text fx:id="avalibleSeats" layoutX="390.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date" wrappingWidth="93.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Label layoutX="277.0" layoutY="96.0" text="Avalible seats:" textFill="#000000b4" />
+    </children>
+  </AnchorPane>
+  </children>
+</VBox>

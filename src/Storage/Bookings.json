@@ -1,12 +1,1 @@
-[
-  {
-    "bookingId":1,
-    "date":"2020-04-30",
-    "firstName":"Almar",
-    "lastName":"Teitsson",
-    "phone":"112",
-    "tourId":1,
-    "seats":1,
-    "email":"a@i.is"
-  }
-]
+[{"date":"2020-04-30","firstName":"Almar","lastName":"Teitsson","phone":"112","tourId":1,"seats":1,"bookingId":1,"email":"a@i.is"},{"date":"4\/12\/2020","firstName":"Björgvin","lastName":"Hall","phone":"1234567","tourId":11,"seats":4,"bookingId":6130,"email":"asdf@adf.is"}]

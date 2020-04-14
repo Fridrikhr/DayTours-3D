@@ -5,12 +5,13 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 
 
 public class DayTourSearch {
-    public ArrayList<Tour> allTours = new ArrayList<Tour>();
-    public ArrayList<Booking> allBookings = new ArrayList<Booking>();
+    public static ArrayList<Tour> allTours = new ArrayList<Tour>();
+    public static ArrayList<Booking> allBookings = new ArrayList<Booking>();
 
     private ArrayList<Tour> myFilter = allTours; // The tours we are going to display, matching the search
 
@@ -62,11 +63,62 @@ public class DayTourSearch {
     }
 
     public Booking searchBookingNumber(String number) {
-        int n = Integer.parseInt(number);
-        for (Booking booking : allBookings) {
-            if(booking.getBookingId() == n) return booking;
+        try {
+            int n = Integer.parseInt(number);
+            for (Booking booking : allBookings) {
+                if(booking.getBookingId() == n) return booking;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return null; // If not found
+    }
+
+    public int getValidBookingNumber() {
+        int rnd = (int) (Math.random()*9000) + 1000;
+        for(Booking booking : allBookings) {
+            if(rnd == booking.getBookingId()) {
+                // try again
+                return getValidBookingNumber();
+            }
+        }
+        return rnd;
+    }
+
+    public boolean createNewBooking(Booking booking) {
+        // insert into bookings.json
+        try {
+            JSONParser parser = new JSONParser();
+            Object obj = parser.parse(new FileReader("src/Storage/bookings.json"));
+            JSONArray jsonArray = (JSONArray) obj;
+            JSONObject newJsonObject = new JSONObject();
+
+            newJsonObject.put("bookingId", booking.getBookingId());
+            newJsonObject.put("date", booking.getDate());
+            newJsonObject.put("firstName", booking.getFirstName());
+            newJsonObject.put("lastName", booking.getLastName());
+            newJsonObject.put("phone", booking.getPhone());
+            newJsonObject.put("tourId", booking.getTourId());
+            newJsonObject.put("seats", booking.getSeats());
+            newJsonObject.put("email", booking.getEmail());
+
+            jsonArray.add(newJsonObject);
+
+            FileWriter file = new FileWriter("src/Storage/bookings.json");
+
+            file.write(jsonArray.toJSONString());
+            file.flush();
+            file.close();
+
+        } catch (Exception e) {
+            System.out.println("Failed.");
+            return false;
+        }
+
+        // insert into allBookings variable
+        allBookings.add(booking);
+        // return true if successful, else false
+        return true;
     }
 
     public ArrayList<Tour> getAllTours() {
@@ -96,52 +148,48 @@ public class DayTourSearch {
         myFilter = filtered;
     }
 
-    public void searchLocations(String s) {
-        ArrayList<Tour> filtered = new ArrayList<Tour>();
+    public void searchSeats(int x) {
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
 
         for (int i = 0; i < myFilter.size(); i++) {
-            if (myFilter.get(i).getLocation().equals(s)) {
-                filtered.add(myFilter.get(i));
-            }
+            int availableSeats = myFilter.get(i).getSeatsLeft();
+            if (availableSeats >= x) filtered.add(myFilter.get(i));
         }
         myFilter = filtered;
     }
 
-    public void searchPrice(int low, int high ) {
-        ArrayList<Tour> filtered = new ArrayList<Tour>();
+    public void searchMinPrice(int s){
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
 
-        for(int i = 0; i < myFilter.size(); i++) {
-            if(myFilter.get(i).getPrice() >= low && myFilter.get(i).getPrice() <= high ) {
-                filtered.add(myFilter.get(i));
-            }
+        for (int i = 0; i < myFilter.size(); i++) {
+            int higher = myFilter.get(i).getPrice();
+            if (s <= higher) filtered.add(myFilter.get(i));
         }
+
         myFilter = filtered;
     }
 
-    public void searchSeats(int number) {
-        ArrayList<Tour> filtered = new ArrayList<Tour>();
+    public void searchMaxPrice(int s) {
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
 
-        for(int i = 0; i < myFilter.size(); i++){
-            if(myFilter.get(i).getSeatsLeft() >= number){
-                filtered.add(myFilter.get(i));
-            }
+        for (int i = 0; i < myFilter.size(); i++) {
+            int lower = myFilter.get(i).getPrice();
+            if (s >= lower) filtered.add(myFilter.get(i));
         }
+
         myFilter = filtered;
     }
 
-    /*
-        ArrayList<Tour> filtered = new ArrayList<Tour>();
+    public void searchPriceSpace (int min, int max) {
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
 
-        for(int i = 0; i < myFilter.size(); i++){
-            String interests = filtered.get(i).getInterests();
-            if(input.toLowerCase().equals(interests.toLowerCase())){
-                filtered.add(myFilter.get(i));
-            }
+        for (int i = 0; i < myFilter.size(); i++) {
+            int x = myFilter.get(i).getPrice();
+            if ((min <= x) && (x <= max)) filtered.add(myFilter.get(i));
         }
-        myFilter = matches;
-    }
-    */
 
+        myFilter = filtered;
+    }
 
     public ArrayList<Tour> getTrips(){
         return myFilter;

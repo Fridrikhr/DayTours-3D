@@ -6,8 +6,10 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BookingController">
@@ -56,18 +58,52 @@
             <Button fx:id="backButton" layoutX="41.0" layoutY="429.0" mnemonicParsing="false" onAction="#backButtonHandler" text="Back" />
             <Button fx:id="searchButton" layoutX="400.0" layoutY="17.0" mnemonicParsing="false" onAction="#searchbookingnrButtonHandler" text="Search" />
             <Text layoutX="41.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking number:" wrappingWidth="133.60003662109375" />
-            <Text fx:id="name" layoutX="41.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0" />
+            <Text fx:id="name" layoutX="170.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
             <TextField fx:id="bookingNr" layoutX="175.0" layoutY="17.0" prefHeight="31.0" prefWidth="210.0" />
-            <Text layoutX="41.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tour name:" wrappingWidth="133.60003662109375" />
-            <Text layoutX="41.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seats booked:" wrappingWidth="133.60003662109375" />
-            <Text fx:id="seatsBooked" layoutX="175.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0" />
-            <Text layoutX="41.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="133.60003662109375" />
-            <Text layoutX="41.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of tour:" wrappingWidth="133.60003662109375" />
-            <Text layoutX="41.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="133.60003662109375" />
-            <Text fx:id="seats" layoutX="41.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0" />
-            <Text fx:id="namePerson" layoutX="41.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0" />
-            <Text fx:id="date" layoutX="41.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0" />
-            <Text fx:id="price" layoutX="41.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0" />
+            <Text layoutX="41.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tour name:" wrappingWidth="133.60003662109375">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <Text layoutX="41.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seats booked:" wrappingWidth="133.60003662109375">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="seatsBooked" layoutX="160.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text layoutX="41.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="133.60003662109375">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text layoutX="41.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of tour:" wrappingWidth="133.60003662109375">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text layoutX="41.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="133.60003662109375">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="seats" layoutX="162.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="namePerson" layoutX="106.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="date" layoutX="152.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="price" layoutX="100.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <ImageView fx:id="bookingImage" fitHeight="293.0" fitWidth="439.0" layoutX="535.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
     </children>
   </AnchorPane>
   </children>

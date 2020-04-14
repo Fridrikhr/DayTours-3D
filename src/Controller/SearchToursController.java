@@ -148,7 +148,6 @@ public class SearchToursController {
     }
 
     public void displayTrips(ArrayList<Tour> filteredTours) {
-        //TODO resetta töfluna fyrst
         resetTable();
         for(Tour tour : filteredTours) {
             ObservableList<String> row = FXCollections.observableArrayList();

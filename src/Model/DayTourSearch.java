@@ -96,6 +96,53 @@ public class DayTourSearch {
         myFilter = filtered;
     }
 
+    public void searchLocations(String s) {
+        ArrayList<Tour> filtered = new ArrayList<Tour>();
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            if (myFilter.get(i).getLocation().equals(s)) {
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    public void searchPrice(int low, int high ) {
+        ArrayList<Tour> filtered = new ArrayList<Tour>();
+
+        for(int i = 0; i < myFilter.size(); i++) {
+            if(myFilter.get(i).getPrice() >= low && myFilter.get(i).getPrice() <= high ) {
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    public void searchSeats(int number) {
+        ArrayList<Tour> filtered = new ArrayList<Tour>();
+
+        for(int i = 0; i < myFilter.size(); i++){
+            if(myFilter.get(i).getSeatsLeft() >= number){
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    /*
+        ArrayList<Tour> filtered = new ArrayList<Tour>();
+
+        for(int i = 0; i < myFilter.size(); i++){
+            String interests = filtered.get(i).getInterests();
+            if(input.toLowerCase().equals(interests.toLowerCase())){
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = matches;
+    }
+    */
+
+
     public ArrayList<Tour> getTrips(){
         return myFilter;
     }

@@ -27,9 +27,9 @@ public class SearchToursController {
     @FXML
     private DatePicker endDateChoice;
     @FXML
-    private ChoiceBox<?> locationChoice;
+    private ChoiceBox locationChoice;
     @FXML
-    private ChoiceBox<?> interestChoice;
+    private ChoiceBox interestChoice;
     @FXML
     private TextField maxPriceInput;
     @FXML
@@ -38,7 +38,6 @@ public class SearchToursController {
     private TextField seatsInput;
     @FXML
     private TextField tourNameInput;
-
     @FXML
     private Button searchButton;
     @FXML
@@ -60,6 +59,11 @@ public class SearchToursController {
     @FXML
     public void initialize() {
         dayTourSearch = new DayTourSearch();
+        ArrayList<ArrayList<String>> info = dayTourSearch.getInfo();
+        ObservableList<String> locations = FXCollections.observableArrayList(info.get(1));
+        locationChoice.setItems(locations);
+        ObservableList<String> Category = FXCollections.observableArrayList(info.get(0));
+        interestChoice.setItems(Category);
 
         // Setur efstu röðina í töfluna
         List<String> columnNames = Arrays.asList("Name","Available Seats","Duration","Date","Price", "id");
@@ -157,6 +161,13 @@ public class SearchToursController {
         }
         if(inputEndDate != null && inputStartDate != null) {
             dayTourSearch.searchDates(inputStartDate, inputEndDate);
+        }
+        if (locationChoice.getValue() != null) {
+            String location = locationChoice.getValue().toString();
+            dayTourSearch.searchLocations(location);
+        }
+        if(interestChoice.getValue() != null) {
+            dayTourSearch.searchCategory(interestChoice.getValue().toString());
         }
             //kannski setja filteredTrips = dayTourSearch.getTrips()
         displayTrips(dayTourSearch.getTrips());

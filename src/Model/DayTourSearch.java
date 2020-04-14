@@ -161,6 +161,31 @@ public class DayTourSearch {
         myFilter = filtered;
     }
 
+    public void searchLocations(String s) {
+        ArrayList<Tour> filtered = new ArrayList<Tour>();
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            if (myFilter.get(i).getLocation().equals(s)) {
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    public void searchCategory(String s){
+        ArrayList<Tour> filtered = new ArrayList<>();
+
+        for(int i = 0; i < myFilter.size(); i++){
+            String interests = myFilter.get(i).getCategory();
+            if(s.toLowerCase().equals(interests.toLowerCase())){
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+
+
     public int getValidBookingNumber() {
         int rnd = (int) (Math.random()*9000) + 1000;
         for(Booking booking : allBookings) {
@@ -206,6 +231,23 @@ public class DayTourSearch {
         allBookings.add(booking);
         // return true if successful, else false
         return true;
+    }
+
+    public ArrayList<ArrayList<String>> getInfo() {
+        ArrayList<String> category = new ArrayList<>();
+        ArrayList<String> locations = new ArrayList<>();
+        for(int i = 0; i < myFilter.size(); i++){
+            if(!category.contains(myFilter.get(i).getCategory())){
+                category.add(myFilter.get(i).getCategory());
+            }
+            if(!locations.contains(myFilter.get(i).getLocation())){
+                locations.add(myFilter.get(i).getLocation());
+            }
+        }
+        ArrayList<ArrayList<String>> stuff = new ArrayList<>();
+        stuff.add(category);
+        stuff.add(locations);
+        return stuff;
     }
 
     public ArrayList<Tour> getTrips(){

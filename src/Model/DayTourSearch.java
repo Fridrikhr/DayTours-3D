@@ -6,7 +6,11 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 public class DayTourSearch {
@@ -197,6 +201,63 @@ public class DayTourSearch {
         }
 
         myFilter = filtered;
+    }
+
+    public void searchDates(LocalDate a, LocalDate b) throws ParseException {
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date inputStart = sdf.parse(a.toString());
+        Date inputEnd = sdf.parse(b.toString());
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            String date = myFilter.get(i).getDate();
+            Date tripDate = sdf.parse(date);
+            if(inputStart.before(tripDate) && inputEnd.after(tripDate) || inputStart.equals(tripDate) || inputEnd.equals(tripDate)){
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    public void searchLocations(String s) {
+        ArrayList<Tour> filtered = new ArrayList<Tour>();
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            if (myFilter.get(i).getLocation().equals(s)) {
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    public void searchCategory(String s){
+        ArrayList<Tour> filtered = new ArrayList<>();
+
+        for(int i = 0; i < myFilter.size(); i++){
+            String interests = myFilter.get(i).getCategory();
+            if(s.toLowerCase().equals(interests.toLowerCase())){
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    public ArrayList<ArrayList<String>> getInfo() {
+        ArrayList<String> category = new ArrayList<>();
+        ArrayList<String> locations = new ArrayList<>();
+        for(int i = 0; i < myFilter.size(); i++){
+            if(!category.contains(myFilter.get(i).getCategory())){
+                category.add(myFilter.get(i).getCategory());
+            }
+            if(!locations.contains(myFilter.get(i).getLocation())){
+                locations.add(myFilter.get(i).getLocation());
+            }
+        }
+        ArrayList<ArrayList<String>> stuff = new ArrayList<>();
+        stuff.add(category);
+        stuff.add(locations);
+        return stuff;
     }
 
     public ArrayList<Tour> getTrips(){

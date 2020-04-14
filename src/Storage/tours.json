@@ -29,7 +29,7 @@
     "Location": "East Region",
     "Price": 2500,
     "Rating": "9",
-    "Image": "test.JPG"
+    "Image": "./images/test.JPG"
   },
   {
     "id": 3,

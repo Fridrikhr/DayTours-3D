@@ -9,9 +9,11 @@
     "Seats": 30,
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
-    "Date": "4/7/2020",
+    "Date": "2020-07-04",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 2,
@@ -23,9 +25,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Almar Teitsson",
-    "Date": "4/15/2020",
+    "Date": "2020-04-05",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9",
+    "Image": "./images/ísl2.JPG"
   },
   {
     "id": 3,
@@ -37,9 +41,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Björgvin Hall",
-    "Date": "4/25/2020",
+    "Date": "2020-05-04",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8",
+    "Image": "./images/ísl3.JPG"
   },
   {
     "id": 4,
@@ -51,9 +57,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
-    "Date": "4/23/2020",
+    "Date": "2020-03-04",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 5,
@@ -65,9 +73,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/10/2020",
+    "Date": "2020-10-04",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 6,
@@ -79,9 +89,11 @@
     "Seats": 60,
     "Seats Left": 60,
     "Tour Guide": "Karl Jónsson",
-    "Date": "4/14/2020",
+    "Date": "2020-12-04",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 7,
@@ -93,9 +105,11 @@
     "Seats": 120,
     "Seats Left": 120,
     "Tour Guide": "Guðmundur Guðmundsson",
-    "Date": "4/9/2020",
+    "Date": "2020-09-12",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 8,
@@ -107,9 +121,11 @@
     "Seats": 45,
     "Seats Left": 45,
     "Tour Guide": "Haraldur Hafþórsson",
-    "Date": "4/17/2020",
+    "Date": "2020-07-22",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 9,
@@ -121,9 +137,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
-    "Date": "4/22/2020",
+    "Date": "2020-02-02",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 10,
@@ -135,9 +153,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Gunnar Gunnarsson",
-    "Date": "4/28/2020",
+    "Date": "2020-08-07",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 11,
@@ -149,9 +169,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/12/2020",
+    "Date": "2020-12-04",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 12,
@@ -163,9 +185,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/12/2020",
+    "Date": "2020-12-04",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 13,
@@ -177,9 +201,11 @@
     "Seats": 30,
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
-    "Date": "4/12/2020",
+    "Date": "2020-12-04",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 14,
@@ -191,9 +217,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Almar Teitsson",
-    "Date": "4/17/2020",
+    "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 15,
@@ -205,9 +233,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Björgvin Hall",
-    "Date": "4/16/2020",
+    "Date": "2020-06-09",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 16,
@@ -219,9 +249,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
-    "Date": "4/29/2020",
+    "Date": "2020-09-12",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 17,
@@ -233,9 +265,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/16/2020",
+    "Date": "2020-06-09",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 18,
@@ -247,9 +281,11 @@
     "Seats": 60,
     "Seats Left": 60,
     "Tour Guide": "Karl Jónsson",
-    "Date": "4/16/2020",
+    "Date": "2020-06-09",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "6",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 19,
@@ -261,9 +297,11 @@
     "Seats": 120,
     "Seats Left": 120,
     "Tour Guide": "Guðmundur Guðmundsson",
-    "Date": "4/19/2020",
+    "Date": "2020-09-12",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 20,
@@ -275,9 +313,11 @@
     "Seats": 45,
     "Seats Left": 45,
     "Tour Guide": "Haraldur Hafþórsson",
-    "Date": "4/21/2020",
+    "Date": "2020-01-03",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 21,
@@ -289,9 +329,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
-    "Date": "4/25/2020",
+    "Date": "2020-05-04",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 22,
@@ -303,9 +345,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Gunnar Gunnarsson",
-    "Date": "4/29/2020",
+    "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 23,
@@ -317,9 +361,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/13/2020",
+    "Date": "2020-03-04",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 24,
@@ -331,9 +377,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/26/2020",
+    "Date": "2020-06-09",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 25,
@@ -345,9 +393,11 @@
     "Seats": 30,
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
-    "Date": "4/8/2020",
+    "Date": "2020-08-07",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 26,
@@ -359,9 +409,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Almar Teitsson",
-    "Date": "4/18/2020",
+    "Date": "2020-08-07",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 27,
@@ -373,9 +425,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Björgvin Hall",
-    "Date": "4/3/2020",
+    "Date": "2020-08-07",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 28,
@@ -387,9 +441,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
-    "Date": "4/1/2020",
+    "Date": "2020-01-03",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 29,
@@ -401,9 +457,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/16/2020",
+    "Date": "2020-06-09",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 30,
@@ -415,9 +473,11 @@
     "Seats": 60,
     "Seats Left": 60,
     "Tour Guide": "Karl Jónsson",
-    "Date": "4/29/2020",
+    "Date": "2020-09-12",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 31,
@@ -429,9 +489,11 @@
     "Seats": 120,
     "Seats Left": 120,
     "Tour Guide": "Guðmundur Guðmundsson",
-    "Date": "4/30/2020",
+    "Date": "2020-11-22",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 32,
@@ -443,9 +505,11 @@
     "Seats": 45,
     "Seats Left": 45,
     "Tour Guide": "Haraldur Hafþórsson",
-    "Date": "4/4/2020",
+    "Date": "2020-04-18",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "6",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 33,
@@ -457,9 +521,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
-    "Date": "4/7/2020",
+    "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 34,
@@ -471,9 +537,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Gunnar Gunnarsson",
-    "Date": "4/12/2020",
+    "Date": "2020-12-04",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 35,
@@ -485,9 +553,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/6/2020",
+    "Date": "2020-06-09",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 36,
@@ -499,9 +569,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/29/2020",
+    "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 37,
@@ -513,9 +585,11 @@
     "Seats": 30,
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
-    "Date": "4/14/2020",
+    "Date": "2020-04-18",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 38,
@@ -527,9 +601,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Almar Teitsson",
-    "Date": "4/17/2020",
+    "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 39,
@@ -541,9 +617,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Björgvin Hall",
-    "Date": "4/13/2020",
+    "Date": "2020-03-04",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 40,
@@ -555,9 +633,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
-    "Date": "4/18/2020",
+    "Date": "2020-08-07",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 41,
@@ -569,9 +649,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/15/2020",
+    "Date": "2020-05-04",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 42,
@@ -583,9 +665,11 @@
     "Seats": 60,
     "Seats Left": 60,
     "Tour Guide": "Karl Jónsson",
-    "Date": "4/30/2020",
+    "Date": "2020-11-22",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 43,
@@ -597,9 +681,11 @@
     "Seats": 120,
     "Seats Left": 120,
     "Tour Guide": "Guðmundur Guðmundsson",
-    "Date": "4/2/2020",
+    "Date": "2020-02-02",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 44,
@@ -611,9 +697,11 @@
     "Seats": 45,
     "Seats Left": 45,
     "Tour Guide": "Haraldur Hafþórsson",
-    "Date": "4/23/2020",
+    "Date": "2020-03-04",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 45,
@@ -625,9 +713,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
-    "Date": "4/24/2020",
+    "Date": "2020-04-18",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 46,
@@ -639,9 +729,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Gunnar Gunnarsson",
-    "Date": "4/27/2020",
+    "Date": "2020-07-22",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 47,
@@ -653,9 +745,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/19/2020",
+    "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "6",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 48,
@@ -667,9 +761,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/8/2020",
+    "Date": "2020-08-07",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 49,
@@ -681,9 +777,11 @@
     "Seats": 30,
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
-    "Date": "4/6/2020",
+    "Date": "2020-06-09",
     "Location": "East region",
-    "Price": 9999
+    "Price": 9999,
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 50,
@@ -695,9 +793,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Almar Teitsson",
-    "Date": "4/19/2020",
+    "Date": "2020-09-12",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 51,
@@ -709,9 +809,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Björgvin Hall",
-    "Date": "4/20/2020",
+    "Date": "2020-02-02",
     "Location": "East Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 52,
@@ -723,9 +825,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
-    "Date": "4/27/2020",
+    "Date": "2020-07-22",
     "Location": "South Region",
-    "Price": 25000
+    "Price": 25000,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 53,
@@ -737,9 +841,11 @@
     "Seats": 100,
     "Seats Left": 100,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/10/2020",
+    "Date": "2020-10-04",
     "Location": "South Region",
-    "Price": 20000
+    "Price": 20000,
+    "Rating": "7",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 54,
@@ -751,9 +857,11 @@
     "Seats": 60,
     "Seats Left": 60,
     "Tour Guide": "Karl Jónsson",
-    "Date": "4/10/2020",
+    "Date": "2020-10-04",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "6,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 55,
@@ -765,9 +873,11 @@
     "Seats": 120,
     "Seats Left": 120,
     "Tour Guide": "Guðmundur Guðmundsson",
-    "Date": "4/16/2020",
+    "Date": "2020-06-09",
     "Location": "Capital Region",
-    "Price": 2500
+    "Price": 2500,
+    "Rating": "8",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 56,
@@ -779,9 +889,11 @@
     "Seats": 45,
     "Seats Left": 45,
     "Tour Guide": "Haraldur Hafþórsson",
-    "Date": "4/13/2020",
+    "Date": "2020-03-04",
     "Location": "South Region",
-    "Price": 7000
+    "Price": 7000,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 57,
@@ -793,9 +905,11 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
-    "Date": "4/27/2020",
+    "Date": "2020-07-22",
     "Location": "East Region",
-    "Price": 13500
+    "Price": 13500,
+    "Rating": "7,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 58,
@@ -807,9 +921,11 @@
     "Seats": 25,
     "Seats Left": 25,
     "Tour Guide": "Gunnar Gunnarsson",
-    "Date": "4/26/2020",
+    "Date": "2020-06-09",
     "Location": "North Region",
-    "Price": 27500
+    "Price": 27500,
+    "Rating": "8,5",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 59,
@@ -821,9 +937,11 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/2/2020",
+    "Date": "2020-02-02",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "9",
+    "Image": "./images/ísl1.JPG"
   },
   {
     "id": 60,
@@ -835,8 +953,10 @@
     "Seats": 43,
     "Seats Left": 43,
     "Tour Guide": "Jón Jónsson",
-    "Date": "4/9/2020",
+    "Date": "2020-09-12",
     "Location": "North Region",
-    "Price": 37500
+    "Price": 37500,
+    "Rating": "9,5",
+    "Image": "./images/ísl1.JPG"
   }
 ]

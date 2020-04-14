@@ -6,7 +6,11 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 public class DayTourSearch {
@@ -138,6 +142,70 @@ public class DayTourSearch {
         }
 
         myFilter = filtered;
+    }
+
+    public void searchDates(LocalDate a, LocalDate b) throws ParseException {
+        ArrayList<Tour> filtered  = new ArrayList<Tour>();
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date inputStart = sdf.parse(a.toString());
+        Date inputEnd = sdf.parse(b.toString());
+
+        for (int i = 0; i < myFilter.size(); i++) {
+            String date = myFilter.get(i).getDate();
+            Date tripDate = sdf.parse(date);
+            if(inputStart.before(tripDate) && inputEnd.after(tripDate) || inputStart.equals(tripDate) || inputEnd.equals(tripDate)){
+                filtered.add(myFilter.get(i));
+            }
+        }
+        myFilter = filtered;
+    }
+
+    public int getValidBookingNumber() {
+        int rnd = (int) (Math.random()*9000) + 1000;
+        for(Booking booking : allBookings) {
+            if(rnd == booking.getBookingId()) {
+                // try again
+                return getValidBookingNumber();
+            }
+        }
+        return rnd;
+    }
+
+    public boolean createNewBooking(Booking booking) {
+        // insert into bookings.json
+        try {
+            JSONParser parser = new JSONParser();
+            Object obj = parser.parse(new FileReader("src/Storage/bookings.json"));
+            JSONArray jsonArray = (JSONArray) obj;
+            JSONObject newJsonObject = new JSONObject();
+
+            newJsonObject.put("bookingId", booking.getBookingId());
+            newJsonObject.put("date", booking.getDate());
+            newJsonObject.put("firstName", booking.getFirstName());
+            newJsonObject.put("lastName", booking.getLastName());
+            newJsonObject.put("phone", booking.getPhone());
+            newJsonObject.put("tourId", booking.getTourId());
+            newJsonObject.put("seats", booking.getSeats());
+            newJsonObject.put("email", booking.getEmail());
+
+            jsonArray.add(newJsonObject);
+
+            FileWriter file = new FileWriter("src/Storage/bookings.json");
+
+            file.write(jsonArray.toJSONString());
+            file.flush();
+            file.close();
+
+        } catch (Exception e) {
+            System.out.println("Failed.");
+            return false;
+        }
+
+        // insert into allBookings variable
+        allBookings.add(booking);
+        // return true if successful, else false
+        return true;
     }
 
     public ArrayList<Tour> getTrips(){

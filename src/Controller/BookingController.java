@@ -70,6 +70,7 @@ public class BookingController {
             namePerson.setText("");
             date.setText("");
             price.setText("");
+            bookingImage.setVisible(false);
         } else {
             // ná í upplýsingar um tourinn
             String tourId = String.valueOf(booking.getTourId());
@@ -79,9 +80,10 @@ public class BookingController {
             seatsBooked.setText(String.valueOf(booking.getSeats()));
             namePerson.setText(booking.getFullName());
             date.setText(tour.getDate());
-            price.setText(tour.getPrice()*booking.getSeats() + "isk.");
+            price.setText(tour.getPrice()*booking.getSeats() + " ISK");
             Image image = new Image(tour.getImageSrc());
             bookingImage.setImage(image);
+            bookingImage.setVisible(true);
         }
     }
 

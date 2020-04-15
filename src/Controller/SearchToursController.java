@@ -73,7 +73,7 @@ public class SearchToursController {
             column.setCellValueFactory(param -> new ReadOnlyObjectWrapper<>(param.getValue().get(finalIdx)));
             if (i == 0) {
                 // Name
-                column.setMinWidth(245);
+                column.setMinWidth(250);
             } else if(i == 5){
                 // id
                 column.setVisible(false);

@@ -70,7 +70,7 @@ public class BookThisTourController {
         totalPrice = oneSeatPrice * numberOfSeats;
         name.setText(tour.getName());
         avalibleSeats.setText(String.valueOf(tour.getSeatsLeft()));
-        price.setText(String.valueOf(totalPrice));
+        price.setText(String.valueOf(totalPrice) + " ISK");
         length.setText(tour.getDuration() + " hours");
         date.setText(tour.getDate());
         setErrorVisable(false);
@@ -132,7 +132,7 @@ public class BookThisTourController {
             try {
                 numberOfSeats = Integer.parseInt(input);
                 totalPrice = numberOfSeats * oneSeatPrice;
-                price.setText(String.valueOf(totalPrice));
+                price.setText(String.valueOf(totalPrice) + " ISK");
             } catch (NumberFormatException e) {
                 //numberOfSeats = 0;
                 seats.setText(String.valueOf(numberOfSeats));

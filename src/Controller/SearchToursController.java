@@ -169,15 +169,13 @@ public class SearchToursController {
         if(interestChoice.getValue() != null) {
             dayTourSearch.searchCategory(interestChoice.getValue().toString());
         }
-            //kannski setja filteredTrips = dayTourSearch.getTrips()
-        displayTrips(dayTourSearch.getTrips());
+        getTrips(dayTourSearch.getTrips());
     }
     public void resetTable() {
         resultTable.getItems().clear();
     }
 
-    public void displayTrips(ArrayList<Tour> filteredTours) {
-        //TODO resetta töfluna fyrst
+    public void getTrips(ArrayList<Tour> filteredTours) {
         resetTable();
         for(Tour tour : filteredTours) {
             ObservableList<String> row = FXCollections.observableArrayList();

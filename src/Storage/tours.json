@@ -10,7 +10,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-04-04",
-    "Location": "East region",
+    "Location": "East Region",
     "Price": 9999,
     "Rating": "7",
     "Image": "./images/ísl1.JPG"
@@ -58,7 +58,7 @@
     "Seats Left": 100,
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
     "Date": "2020-04-09",
-    "Location": "South Region",
+    "Location": "East Region",
     "Price": 25000,
     "Rating": "7",
     "Image": "./images/ísl1.JPG"
@@ -138,7 +138,7 @@
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
     "Date": "2020-02-02",
-    "Location": "East Region",
+    "Location": "South Region",
     "Price": 13500,
     "Rating": "8,5",
     "Image": "./images/ísl1.JPG"
@@ -202,7 +202,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-12-04",
-    "Location": "East region",
+    "Location": "South Region",
     "Price": 9999,
     "Rating": "9,5",
     "Image": "./images/ísl1.JPG"
@@ -218,7 +218,7 @@
     "Seats Left": 10,
     "Tour Guide": "Almar Teitsson",
     "Date": "2020-07-22",
-    "Location": "East Region",
+    "Location": "South Region",
     "Price": 2500,
     "Rating": "9",
     "Image": "./images/ísl1.JPG"
@@ -234,7 +234,7 @@
     "Seats Left": 25,
     "Tour Guide": "Björgvin Hall",
     "Date": "2020-06-09",
-    "Location": "East Region",
+    "Location": "South Region",
     "Price": 2500,
     "Rating": "8,5",
     "Image": "./images/ísl1.JPG"
@@ -329,8 +329,8 @@
     "Seats": 10,
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
-    "Date": "2020-05-04",
-    "Location": "East Region",
+    "Date": "2020-04-04",
+    "Location": "South Region",
     "Price": 13500,
     "Rating": "9",
     "Image": "./images/ísl1.JPG"
@@ -394,7 +394,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-04-07",
-    "Location": "East region",
+    "Location": "South Region",
     "Price": 9999,
     "Rating": "9,5",
     "Image": "./images/ísl1.JPG"
@@ -439,7 +439,7 @@
     "Duration": 11,
     "Small Description": "A day trip around the golden circle",
     "Seats": 100,
-    "Seats Left": 100,
+    "Seats Left": 25,
     "Tour Guide": "Friðrik Hreinn Sigurðsson",
     "Date": "2020-04-03",
     "Location": "South Region",
@@ -490,7 +490,7 @@
     "Seats Left": 120,
     "Tour Guide": "Guðmundur Guðmundsson",
     "Date": "2020-04-22",
-    "Location": "Capital Region",
+    "Location": "South Region",
     "Price": 2500,
     "Rating": "7",
     "Image": "./images/ísl1.JPG"
@@ -579,14 +579,14 @@
     "id": 37,
     "Tour Name": "Hoffellsjokull Glacier",
     "Category": "Nature",
-    "Description": "This is a tour to and from Hoffellsjokull which is a nice attraction if you stay in Hofn, east region. There is also a small lake which makes the view simply gorgeous.",
+    "Description": "This is a tour to and from Hoffellsjokull which is a nice attraction if you stay in Hofn, east Region. There is also a small lake which makes the view simply gorgeous.",
     "Duration": 6,
     "Small Description": "Tour to and from Hoffellsjokull",
     "Seats": 30,
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-04-18",
-    "Location": "East region",
+    "Location": "South Region",
     "Price": 9999,
     "Rating": "9",
     "Image": "./images/ísl1.JPG"
@@ -714,7 +714,7 @@
     "Seats Left": 10,
     "Tour Guide": "Baldur Gunnarsson",
     "Date": "2020-04-18",
-    "Location": "East Region",
+    "Location": "South Region",
     "Price": 13500,
     "Rating": "7",
     "Image": "./images/ísl1.JPG"
@@ -778,7 +778,7 @@
     "Seats Left": 30,
     "Tour Guide": "Kristinn Godfrey",
     "Date": "2020-06-09",
-    "Location": "East region",
+    "Location": "East Region",
     "Price": 9999,
     "Rating": "9,5",
     "Image": "./images/ísl1.JPG"

@@ -63,7 +63,7 @@
             <Button fx:id="backButton" layoutX="41.0" layoutY="429.0" mnemonicParsing="false" onAction="#backButtonHandler" text="Back" />
             <Button fx:id="searchButton" layoutX="400.0" layoutY="17.0" mnemonicParsing="false" onAction="#searchbookingnrButtonHandler" text="Search" />
             <Text layoutX="41.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking number:" wrappingWidth="133.60003662109375" />
-            <Text fx:id="name" layoutX="175.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="503.0">
+            <Text fx:id="name" layoutX="175.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="818.0">
                <font>
                   <Font size="24.0" />
                </font></Text>
